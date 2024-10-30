@@ -15,12 +15,23 @@ export default {
     extend: {
       colors: {
         primary: "#e0d3c3",
+        secondary: "#bc9d89",
+        borderColor: "#a77a5b",
         green: "#00a2a7",
         red: "#e71364",
         yellow: "#ffbf0b",
       },
       borderWidth: {
         DEFAULT: "1px",
+      },
+      keyframes: {
+        loader: {
+          "0%": { transform: "scale(4)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        loader: "loader 3s linear",
       },
     },
   },

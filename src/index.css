@@ -7,5 +7,31 @@
   padding: 0;
 }
 
+details summary::-webkit-details-marker {
+  display: none !important;
+}
+
+details summary {
+  padding-left: 0 !important;
+  list-style: none !important;
+}
+
+.navbar {
+  transform: translateX(120vh);
+  transition: all 500ms ease-in-out;
+  z-index: 100;
+  position: fixed;
+  top: 15%;
+}
+
+.toggle-navbar {
+  transform: none;
+}
+
 .hero-section {
+  background: url("./assets/background/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
