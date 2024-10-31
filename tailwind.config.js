@@ -21,6 +21,14 @@ export default {
         red: "#e71364",
         yellow: "#ffbf0b",
       },
+      fontFamily: {
+        dmRegular: ["DMSerifRegular"],
+        ebGroundRegular: ["EBGroundRegular"],
+        ebGroundMedium: ["EBGroundMedium"],
+        ebGroundSemibold: ["EBGroundSemibold"],
+        ebGroundBold: ["EBGroundBold"],
+        ebGroundExtraBold: ["EBGroundExtraBold"],
+      },
       borderWidth: {
         DEFAULT: "1px",
       },

@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -20,6 +30,40 @@ details summary {
   list-style: none !important;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: DMSerifRegular;
+  src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: EBGroundRegular;
+  src: url(./assets/fonts/EBGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: EBGroundMedium;
+  src: url(./assets/fonts/EBGaramond-Medium.ttf);
+}
+
+@font-face {
+  font-family: EBGroundSemibold;
+  src: url(./assets/fonts/EBGaramond-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: EBGroundBold;
+  src: url(./assets/fonts/EBGaramond-Bold.ttf);
+}
+
+@font-face {
+  font-family: EBGroundExtraBold;
+  src: url(./assets/fonts/EBGaramond-ExtraBold.ttf);
+}
+
 .navbar {
   transform: translateX(120vh);
   transition: all 500ms ease-in-out;
@@ -30,14 +74,6 @@ details summary {
 
 .toggle-navbar {
   transform: none;
-}
-
-.hero-section {
-  background: url("./assets/background/hero-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .img-without-text {
@@ -66,11 +102,24 @@ details summary {
   }
 }
 
+.hero-section,
+.founder-section {
+  background: url(./assets/background/desktop-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 @media screen and (max-width: 480px) {
   .hero-section {
     background: url("./assets/background/mobile-bg.png");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 65rem;
+    background-position: center center;
+  }
+  .founder-section {
+    background: url("./assets/background/mobile-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }

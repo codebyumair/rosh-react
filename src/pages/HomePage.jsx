@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* <FounderSection /> */}
       {/* <Footer /> */}
     </>

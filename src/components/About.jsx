@@ -3,7 +3,7 @@ import profileDividerRed from "../assets/divider/profile-divider-red.svg";
 
 const About = ({ img, title = "", description = [], isFounder = false }) => {
   return (
-    <section className="md:h-screen h-full w-full bg-primary bg-opacity-[.88]">
+    <section className="md:h-screen h-screen w-full bg-primary bg-opacity-[.88]">
       <div className="md:pt-32 pt-36 pb-3 px-4 md:px-48">
         {!isFounder ? (
           <img

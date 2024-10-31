@@ -12,7 +12,7 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
 
   return (
     <div
-      className="navbar flex flex-col gap-1 right-[.9rem] md:right-[3.5rem] rounded-xl bg-primary border border-borderColor p-2 shadow-xl"
+      className="navbar font-ebGroundRegular capitalize flex flex-col gap-1 right-[.9rem] md:right-[3.5rem] rounded-xl bg-primary border border-borderColor p-2 shadow-xl"
       ref={navRef}
     >
       <NavLink
@@ -23,27 +23,27 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
         <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
           <img src={home} alt="" className="w-[24px]" />
         </div>
-        <span>HOME</span>
+        <span>Home</span>
       </NavLink>
       <NavLink
-        to="/gift"
+        to="/"
         onClick={handleLinkClick}
         className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-1 pr-4"
       >
         <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
           <img src={gift} alt="" className="w-[24px]" />
         </div>
-        <span>GIFT</span>
+        <span>Gift</span>
       </NavLink>
       <NavLink
-        to="/outdoor"
+        to="/"
         onClick={handleLinkClick}
         className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-1 pr-4"
       >
         <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
           <img src={frame} alt="" className="w-[24px]" />
         </div>
-        <span>OUTDOOR</span>
+        <span>Outdoor</span>
       </NavLink>
     </div>
   );

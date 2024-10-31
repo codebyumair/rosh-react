@@ -14,12 +14,12 @@ const HeroSection = () => {
   }, []);
   return (
     <>
-      <section className="hero-section bg-primary w-full md:h-screen h-[100dvh] md:pt-32 pt-36 relative overflow-hidden select-none">
+      <section className="md:h-screen h-[100dvh] overflow-hidden hero-section md:pt-40 lg:pt-48 pt-40">
         {!showLogoWithText ? (
           <img
             src={logoWithoutText}
             alt=""
-            className="md:w-[100px] w-[70px] img-without-text mx-auto"
+            className="md:w-[100px] w-[75px] img-without-text mx-auto"
             style={{ zIndex: 99999 }}
           />
         ) : (
