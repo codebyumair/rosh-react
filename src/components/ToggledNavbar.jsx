@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import React from "react";
+import gift from "../assets/icons/gift.svg";
+import frame from "../assets/icons/frame.svg";
+import home from "../assets/icons/home.svg";
 import { NavLink } from "react-router-dom";
-import sunrays from "../assets/sunrays.svg";
 
 const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
   const handleLinkClick = () => {
@@ -11,28 +12,39 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
 
   return (
     <div
-      className="navbar flex flex-col right-[.9rem] md:right-[3.5rem] rounded-xl bg-primary border border-borderColor"
+      className="navbar flex flex-col gap-1 right-[.9rem] md:right-[3.5rem] rounded-xl bg-primary border border-borderColor p-2 shadow-xl"
       ref={navRef}
     >
-      <div className="p-2 flex flex-col gap-1">
-        <p className="uppercase text-borderColor font-bold text-sm my-2">
-          Our products
-        </p>
-        <NavLink
-          to="/outdoor"
-          onClick={handleLinkClick}
-          className="py-1 bg-secondary rounded-lg px-2"
-        >
-          Outdoor
-        </NavLink>
-        <NavLink
-          to="/gift"
-          onClick={handleLinkClick}
-          className="py-1 bg-secondary rounded-lg px-2"
-        >
-          Gifts
-        </NavLink>
-      </div>
+      <NavLink
+        to="/"
+        onClick={handleLinkClick}
+        className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-1 pr-4"
+      >
+        <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
+          <img src={home} alt="" className="w-[24px]" />
+        </div>
+        <span>HOME</span>
+      </NavLink>
+      <NavLink
+        to="/gift"
+        onClick={handleLinkClick}
+        className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-1 pr-4"
+      >
+        <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
+          <img src={gift} alt="" className="w-[24px]" />
+        </div>
+        <span>GIFT</span>
+      </NavLink>
+      <NavLink
+        to="/outdoor"
+        onClick={handleLinkClick}
+        className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-1 pr-4"
+      >
+        <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
+          <img src={frame} alt="" className="w-[24px]" />
+        </div>
+        <span>OUTDOOR</span>
+      </NavLink>
     </div>
   );
 };

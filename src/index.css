@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+img {
+  pointer-events: none;
+}
+
 details summary::-webkit-details-marker {
   display: none !important;
 }
@@ -34,4 +38,39 @@ details summary {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.img-without-text {
+  animation: scaleUp 3s ease-out forwards;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(50);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.img-with-text {
+  animation: slideDown 1s ease-in linear;
+}
+
+@keyframes slideDown {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    background: url("./assets/background/mobile-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65rem;
+  }
 }

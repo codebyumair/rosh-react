@@ -3,7 +3,7 @@ import logo from "../assets/logo-with-text.svg";
 
 const AboutSection = () => {
   return (
-    <div className="bg-primary bg-fixed h-screen">
+    <div className="">
       <About
         img={logo}
         title="Rosh. A legacy etched in glass."
