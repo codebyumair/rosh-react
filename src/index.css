@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 html,
 body {
   margin: 0;
@@ -30,7 +34,7 @@ details summary {
   list-style: none !important;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -122,4 +126,23 @@ details summary {
     background-repeat: no-repeat;
     background-position: center center;
   }
+}
+
+.profile-desc::-webkit-scrollbar {
+  width: 4px;
+  display: block !important;
+}
+
+.profile-desc::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+
+.profile-desc::-webkit-scrollbar-thumb {
+  background: #bc9d89;
+  border-radius: 10px;
+}
+
+.profile-desc::-webkit-scrollbar-thumb:hover {
+  background: #a77a5b;
 }

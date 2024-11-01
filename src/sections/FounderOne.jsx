@@ -4,13 +4,13 @@ import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import logo from "../assets/logo-with-text.svg";
+import logo from "../assets/profile/Rosh-Abdullah-Khandwani-Profile-photos.png";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
 
-const AboutSection = () => {
+const FounderOne = () => {
   return (
-    <div className="md:h-screen h-[110vh] hero-section sticky top-0">
+    <div className="md:h-screen h-screen hero-section sticky top-0">
       <div className="bg-opacity-[.88] bg-primary h-full md:pt-36 pt-44 md:pb-0  pb-8 px-4 md:px-0">
         <motion.img
           initial="hidden"
@@ -25,9 +25,11 @@ const AboutSection = () => {
           alt=""
           className="sticky md:w-[160px] w-[140px] mx-auto translate-x-[-50%] left-[50%]"
         />
-
         <h2 className="font-bold mx-auto text-center my-4 font-dmRegular">
-          <BlurText text="Rosh. A legacy etched in glass." delay={50} />
+          <BlurText
+            text="Abdullah Khandwani. A pioneer par excellence."
+            delay={50}
+          />
         </h2>
         <motion.div
           initial="hidden"
@@ -46,16 +48,16 @@ const AboutSection = () => {
             className="md:w-[140px] w-[120px] mx-auto"
           />
           <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
-            We make you look at glass in a different light. As one of the
-            pioneers of fusion and stained-glass art in India, each of our
-            creation is a symphony of tradition and innovation. Our bespoke
-            designs, from radiant murals to intricate glass structures, are not
-            just art—they are poetries frozen in glass, capturing the essence of
-            beauty and individuality. With every curve, hue, and shimmer, we
-            breathe life into spaces, transforming ideas into timeless works of
-            art. Our meticulously hand-crafted designs transform the ordinary
-            into the extraordinary, elevating the aesthetic appeal of any
-            environment.
+            Abdullah Khandwani, a creator at heart, is an eminent and renowned
+            stained-glass artist from India. He has been instrumental in
+            popularizing the art and craft across India and Canada over the past
+            three decades.", "Abdullah Khandwani's innovative approach to glass
+            art reflects a deep connection to heritage while pushing the
+            boundaries of modern artistic expression, making him a true pioneer
+            in the world of stained glass", "With a keen eye for detail and an
+            innate understanding of light and colour, his work transcends mere
+            decoration, creating ethereal, illuminated spaces that captivate the
+            soul.
           </p>
           <img
             src={profileDividerRed}
@@ -83,4 +85,4 @@ const AboutSection = () => {
     </div>
   );
 };
-export default AboutSection;
+export default FounderOne;

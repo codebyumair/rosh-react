@@ -1,14 +1,21 @@
 import profileDividerGreen from "../assets/divider/profile-divider-green.svg";
 import profileDividerRed from "../assets/divider/profile-divider-red.svg";
 import { founders } from "../data/founder";
+import FounderOne from "./FounderOne";
+import FounderThree from "./FounderThree";
+import FounderTwo from "./FounderTwo";
 
 const FounderSection = () => {
   return (
     <>
+      <FounderOne />
+      <FounderTwo />
+      <FounderThree />
+      {/* <div className="founder-section sticky top-0 h-max"></div>
       {founders.map((founder, index) => {
         return (
-          <div className="h-full founder-section">
-            <div className="bg-opacity-[.88] bg-primary h-full md:pt-40 lg:pt-48 px-4 md:px-0 border border-borderColor">
+          <div className="bg-opacity-[.88] bg-primary h-full md:pt-40 lg:pt-48 px-4 md:px-0 border border-borderColor">
+            <div className="">
               <img
                 src={founder.image}
                 alt=""
@@ -43,7 +50,7 @@ const FounderSection = () => {
             </div>
           </div>
         );
-      })}
+      })} */}
     </>
   );
 };

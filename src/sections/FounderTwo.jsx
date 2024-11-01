@@ -4,14 +4,14 @@ import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import logo from "../assets/logo-with-text.svg";
+import logo from "../assets/profile/Rosh-Aabid-Surti-Profile-photos.png";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
 
-const AboutSection = () => {
+const FounderTwo = () => {
   return (
-    <div className="md:h-screen h-[110vh] hero-section sticky top-0">
-      <div className="bg-opacity-[.88] bg-primary h-full md:pt-36 pt-44 md:pb-0  pb-8 px-4 md:px-0">
+    <div className="md:h-screen h-screen hero-section sticky top-0">
+      <div className="bg-opacity-[.88] bg-primary h-full md:pt-36 pt-44 pb-8 px-4 md:px-0">
         <motion.img
           initial="hidden"
           viewport={{ once: true }}
@@ -25,9 +25,8 @@ const AboutSection = () => {
           alt=""
           className="sticky md:w-[160px] w-[140px] mx-auto translate-x-[-50%] left-[50%]"
         />
-
         <h2 className="font-bold mx-auto text-center my-4 font-dmRegular">
-          <BlurText text="Rosh. A legacy etched in glass." delay={50} />
+          <BlurText text="Aabid Surti. A man of many talents." delay={50} />
         </h2>
         <motion.div
           initial="hidden"
@@ -38,7 +37,7 @@ const AboutSection = () => {
           }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           whileInView="visible"
-          className="md:w-[78ch] text-pretty mx-auto text-center py-2 px-4 bg-primary rounded-2xl"
+          className="profile-desc md:w-[78ch] text-pretty mx-auto text-center py-2 px-4 bg-primary rounded-2xl md:h-[300px] overflow-y-scroll h-[320px]"
         >
           <img
             src={profileDividerGreen}
@@ -46,16 +45,28 @@ const AboutSection = () => {
             className="md:w-[140px] w-[120px] mx-auto"
           />
           <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
-            We make you look at glass in a different light. As one of the
-            pioneers of fusion and stained-glass art in India, each of our
-            creation is a symphony of tradition and innovation. Our bespoke
-            designs, from radiant murals to intricate glass structures, are not
-            just art—they are poetries frozen in glass, capturing the essence of
-            beauty and individuality. With every curve, hue, and shimmer, we
-            breathe life into spaces, transforming ideas into timeless works of
-            art. Our meticulously hand-crafted designs transform the ordinary
-            into the extraordinary, elevating the aesthetic appeal of any
-            environment.
+            National Award-winning author Aabid Surti is a versatile artist,
+            celebrated for his remarkable contributions across various creative
+            disciplines. His brilliance shines not only in literature but also
+            in the visual arts, where he has earned widespread acclaim as a
+            painter. Over the years, he has held 16 prestigious exhibitions,
+            both in India and internationally, captivating audiences with his
+            distinctive artistic vision.
+          </p>
+          <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
+            Early in his career, Surti pioneered a groundbreaking technique
+            known as 'mirror collage,' a form of art that caught the attention
+            of global critics, earning particular praise in Japan for its
+            originality and depth.
+          </p>
+          <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
+            In 1971, the Indian government honoured his contributions by
+            commissioning a short film that highlighted his creative genius.
+            Surti's talents extend beyond the canvas. As a gifted cartoonist, he
+            brought to life 'Dabbuji,' the beloved simpleton whose witty and
+            endearing antics resonated with countless readers. Aabid Surti
+            continues to make a mark with his boundless creativity and his
+            ability to move seamlessly between artistic forms.
           </p>
           <img
             src={profileDividerRed}
@@ -83,4 +94,4 @@ const AboutSection = () => {
     </div>
   );
 };
-export default AboutSection;
+export default FounderTwo;

@@ -14,7 +14,7 @@ const HeroSection = () => {
   }, []);
   return (
     <>
-      <section className="md:h-screen h-[100dvh] overflow-hidden hero-section md:pt-40 lg:pt-48 pt-40">
+      <section className="h-screen overflow-hidden hero-section lg:pt-48 md:pt-36 pt-44 sticky top-0">
         {!showLogoWithText ? (
           <img
             src={logoWithoutText}
