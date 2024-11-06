@@ -8,10 +8,10 @@ import logo from "../assets/profile/Rosh-Abdullah-Khandwani-Profile-photos.png";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
 
-const FounderOne = () => {
+const FounderOne = ({ ref }) => {
   return (
-    <div className="md:h-screen h-screen hero-section sticky top-0">
-      <div className="bg-opacity-[.88] bg-primary h-full md:pt-36 pt-44 md:pb-0  pb-8 px-4 md:px-0">
+    <div className="md:h-screen h-screen hero-section sticky top-0" ref={ref}>
+      <div className="bg-opacity-[.88] bg-primary h-screen md:pt-36 pt-44 md:pb-0  pb-8 px-4 md:px-0">
         <motion.img
           initial="hidden"
           viewport={{ once: true }}
@@ -40,24 +40,29 @@ const FounderOne = () => {
           }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           whileInView="visible"
-          className="md:w-[78ch] text-pretty mx-auto text-center py-2 px-4 bg-primary rounded-2xl"
+          className="profile-desc md:w-[78ch] text-pretty mx-auto text-center py-2 px-4 bg-primary rounded-2xl md:h-[300px] overflow-y-scroll h-[320px]"
         >
           <img
             src={profileDividerGreen}
             alt=""
             className="md:w-[140px] w-[120px] mx-auto"
           />
-          <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
+          <p className="my-2 text-sm md:text-lg lg:text-xl font-ebGroundRegular">
             Abdullah Khandwani, a creator at heart, is an eminent and renowned
             stained-glass artist from India. He has been instrumental in
             popularizing the art and craft across India and Canada over the past
-            three decades.", "Abdullah Khandwani's innovative approach to glass
-            art reflects a deep connection to heritage while pushing the
-            boundaries of modern artistic expression, making him a true pioneer
-            in the world of stained glass", "With a keen eye for detail and an
-            innate understanding of light and colour, his work transcends mere
-            decoration, creating ethereal, illuminated spaces that captivate the
-            soul.
+            three decades.
+          </p>
+          <p className="my-2 text-sm md:text-lg lg:text-xl font-ebGroundRegular">
+            Abdullah Khandwani's innovative approach to glass art reflects a
+            deep connection to heritage while pushing the boundaries of modern
+            artistic expression, making him a true pioneer in the world of
+            stained glass.
+          </p>
+          <p className="my-2 text-sm md:text-lg lg:text-xl font-ebGroundRegular">
+            With a keen eye for detail and an innate understanding of light and
+            colour, his work transcends mere decoration, creating ethereal,
+            illuminated spaces that captivate the soul.
           </p>
           <img
             src={profileDividerRed}
@@ -65,6 +70,7 @@ const FounderOne = () => {
             className="md:w-[140px] w-[120px] mx-auto"
           />
         </motion.div>
+
         <motion.div
           initial="hidden"
           viewport={{ once: true }}

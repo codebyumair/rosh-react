@@ -25,8 +25,11 @@ const Header = () => {
         className="flex  items-center justify-between md:px-16 px-4 md:py-6 py-4 fixed w-full"
         style={{ zIndex: 99 }}
       >
-        <Link to="/">
-          <img src={logo} alt="Rosh-Logo" className="md:w-[90px] w-[80px]" />
+        <Link
+          to="/"
+          className="bg-primary rounded-2xl md:p-3 p-2 border border-borderColor"
+        >
+          <img src={logo} alt="Rosh-Logo" className="md:w-[90px] w-[60px]" />
         </Link>
         <button
           onClick={toggleNavbar}
