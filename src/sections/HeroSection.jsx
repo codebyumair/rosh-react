@@ -24,7 +24,7 @@ const HeroSection = () => {
   }, []);
   return (
     <div ref={heroRef}>
-      <section className="h-full md:pt-40 pt-36 relative">
+      <section className="h-full md:pt-40 pt-20 relative">
         <div className="h-screen">
           {!showLogoWithText ? (
             <img
@@ -46,7 +46,7 @@ const HeroSection = () => {
             </>
           )}
         </div>
-        <div className="bg-opacity-[.88] bg-primary h-screen md:pt-40 pt-36 px-4 md:px-16">
+        <div className="bg-opacity-[.88] bg-primary h-screen md:pt-40 pt-20 px-4 md:px-16">
           <img
             src={logoWithText}
             alt=""
@@ -65,7 +65,7 @@ const HeroSection = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[280px] md:h-[200px] profile-desc overflow-y-scroll md:w-[130ch] text-pretty mx-auto text-center py-4 px-4 md:px-8 bg-primary rounded-2xl"
+            className="h-[250px] md:h-[200px] profile-desc overflow-y-scroll md:w-[130ch] text-pretty mx-auto text-center py-4 px-4 md:px-8 bg-primary rounded-2xl"
           >
             <img
               src={profileDividerGreen}
