@@ -24,7 +24,7 @@ const HeroSection = () => {
   }, []);
   return (
     <div ref={heroRef}>
-      <section className="h-full md:pt-40 pt-28 relative">
+      <section className="h-full md:pt-40 pt-36 relative">
         <div className="h-screen">
           {!showLogoWithText ? (
             <img
@@ -46,7 +46,7 @@ const HeroSection = () => {
             </>
           )}
         </div>
-        <div className="bg-opacity-[.88] bg-primary h-screen md:pt-40 pt-28 px-4 md:px-16">
+        <div className="bg-opacity-[.88] bg-primary h-screen md:pt-40 pt-36 px-4 md:px-16">
           <img
             src={logoWithText}
             alt=""
@@ -99,7 +99,7 @@ const HeroSection = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             whileInView="visible"
-            className="flex items-center justify-center mt-6 gap-2"
+            className="flex items-center justify-center mt-4 gap-2"
           >
             <IoLogoInstagram className="bg-secondary text-white rounded-full size-7 p-1" />
             <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />
