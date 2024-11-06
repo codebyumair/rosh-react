@@ -9,8 +9,8 @@ const FounderSection = () => {
   return (
     <>
       <FounderOne />
-      <FounderTwo />
-      <FounderThree />
+      {/* <FounderTwo /> */}
+      {/* <FounderThree /> */}
       {/* <div className="founder-section sticky top-0 h-max"></div>
       {founders.map((founder, index) => {
         return (
