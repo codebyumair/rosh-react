@@ -4,12 +4,14 @@ import FounderSection from "../sections/FounderSection";
 import Hero from "../sections/Hero";
 import HeroSection from "../sections/HeroSection";
 import ProductSection from "../sections/ProductSection";
+import Test from "../sections/Test";
 
 const HomePage = () => {
   return (
     <>
-      {/* <Hero /> */}
-      <HeroSection />
+      <Hero />
+      {/* <Test/> */}
+      {/* <HeroSection /> */}
       {/* <AboutSection /> */}
       {/* <FounderSection /> */}
       {/* <ProductSection /> */}

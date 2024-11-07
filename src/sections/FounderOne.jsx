@@ -7,8 +7,10 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import logo from "../assets/profile/Rosh-Abdullah-Khandwani-Profile-photos.png";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
+import { useEffect } from "react";
 
 const FounderOne = ({ ref }) => {
+  useEffect(() => {}, []);
   return (
     <div className="md:h-screen h-screen hero-section sticky top-0" ref={ref}>
       <div className="bg-opacity-[.88] bg-primary h-screen md:pt-36 pt-44 md:pb-0  pb-8 px-4 md:px-0">
@@ -25,11 +27,11 @@ const FounderOne = ({ ref }) => {
           alt=""
           className="sticky md:w-[160px] w-[140px] mx-auto translate-x-[-50%] left-[50%]"
         />
-        <h2 className="font-bold mx-auto text-center my-4 font-dmRegular">
-          <BlurText
-            text="Abdullah Khandwani. A pioneer par excellence."
-            delay={50}
-          />
+        <h2 className="font-bold mx-auto md:text-xl text-lg text-center my-2 font-dmRegular">
+          <BlurText text="Abdullah Khandwani." delay={50} />
+        </h2>
+        <h2 className="font-bold mx-auto md:text-xl text-lg text-center font-dmRegular">
+          <BlurText text="A pioneer par excellence." delay={50} />
         </h2>
         <motion.div
           initial="hidden"

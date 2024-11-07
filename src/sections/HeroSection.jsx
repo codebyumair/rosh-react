@@ -54,7 +54,7 @@ const HeroSection = () => {
             src={logoWithText}
             alt=""
             className={` sticky lg:w-[230px] md:w-[190px] w-[180px] mx-auto translate-x-[-50%] left-[50%] img-with-text`}
-            style={{ zIndex: 9999 }}
+            style={{ zIndex: 99 }}
           />
           <h2 className="font-bold mx-auto md:text-xl text-lg text-center my-2 font-dmRegular">
             <BlurText text="Rosh. A legacy etched in glass." delay={50} />
@@ -69,7 +69,7 @@ const HeroSection = () => {
               }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
               whileInView="visible"
-              className="h-[250px] md:h-[200px] profile-desc overflow-y-scroll md:w-[130ch] text-pretty mx-auto text-center py-4 px-4 md:px-8 bg-primary rounded-2xl"
+              className="h-[250px] md:h-[200px]  grid place-items-center profile-desc overflow-y-scroll md:w-[130ch] text-pretty mx-auto text-center py-4 px-4 md:px-8 bg-primary rounded-2xl"
             >
               <img
                 src={profileDividerGreen}

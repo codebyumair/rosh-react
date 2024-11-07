@@ -18,7 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 img {
@@ -43,7 +43,7 @@ body::-webkit-scrollbar,
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   overflow-y: scroll;
   background: url(./assets/background/desktop-bg.png) no-repeat center top fixed;
   -webkit-background-size: cover;
@@ -57,6 +57,7 @@ body {
   height: 100vh;
   background: url(./assets/background/desktop-bg.png) no-repeat center top;
   background-size: cover;
+  position: relative;
 }
 
 @font-face {
@@ -125,6 +126,32 @@ body {
   to {
     visibility: visible;
   }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section {
+  animation: appear linear;
+  animation-timeline: scroll();
+  animation-range: entry 0 cover 40%;
+}
+
+.hero {
+  scroll-snap-type: y mandatory;
+}
+
+.hero-section,
+.about-section {
+  scroll-snap-align: center;
 }
 
 /* .hero-section,
