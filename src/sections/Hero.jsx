@@ -65,7 +65,7 @@ const Hero = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[250px] md:flex items-center justify-center flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-0"
+            className="h-[250px] md:h-[180px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
           >
             <img
               src={profileDividerGreen}
@@ -109,7 +109,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="h-screen bg-primary bg-opacity-[.88] md:pt-40 pt-24 w-full founders md:px-16">
-        <img src={founder1} alt="" className="md:w-[500px] w-[260px] mx-auto" />
+        <img src={founder1} alt="" className="md:w-[350px] w-[260px] mx-auto" />
         <div className="flex md:flex-row flex-col items-center justify-center h-fit">
           <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 font-dmRegular">
             <BlurText text="Abdullah Khandwani." delay={50} />
@@ -128,7 +128,7 @@ const Hero = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[250px] md:flex items-center justify-center flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-0"
+            className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
           >
             <img
               src={profileDividerGreen}
@@ -178,7 +178,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="h-screen bg-primary bg-opacity-[.88] md:pt-40 pt-24 w-full founders md:px-16">
-        <img src={founder2} alt="" className="md:w-[500px] w-[260px] mx-auto" />
+        <img src={founder2} alt="" className="md:w-[350px] w-[260px] mx-auto" />
         <div className="flex md:flex-row flex-col items-center justify-center h-fit">
           <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 font-dmRegular">
             <BlurText text="Aabid Surti. A man of many talents." delay={50} />
@@ -197,7 +197,7 @@ const Hero = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[250px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
+            className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
           >
             <img
               src={profileDividerGreen}
@@ -254,7 +254,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="h-screen bg-primary bg-opacity-[.88] md:pt-40 pt-24 w-full founders md:px-16">
-        <img src={founder3} alt="" className="md:w-[500px] w-[260px] mx-auto" />
+        <img src={founder3} alt="" className="md:w-[350px] w-[260px] mx-auto" />
         <div className="flex md:flex-row flex-col items-center justify-center h-fit">
           <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 font-dmRegular">
             <BlurText text="Roshan Ali Khan." delay={50} />
@@ -273,7 +273,7 @@ const Hero = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[250px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
+            className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
           >
             <img
               src={profileDividerGreen}
