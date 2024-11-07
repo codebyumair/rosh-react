@@ -128,29 +128,13 @@ body {
   }
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translateY(100vh);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.about-section {
-  animation: appear linear;
-  animation-timeline: scroll();
-  animation-range: entry 0 cover 40%;
-}
-
 .hero {
   scroll-snap-type: y mandatory;
 }
 
 .hero-section,
-.about-section {
+.about-section,
+.founders {
   scroll-snap-align: center;
 }
 
