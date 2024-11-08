@@ -14,8 +14,8 @@ const HomePage = () => {
       {/* <HeroSection /> */}
       {/* <AboutSection /> */}
       {/* <FounderSection /> */}
-      {/* <ProductSection /> */}
-      {/* <Footer /> */}
+      <ProductSection />
+      <Footer />
     </>
   );
 };
