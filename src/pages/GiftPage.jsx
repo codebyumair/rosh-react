@@ -88,7 +88,7 @@ const GiftPage = () => {
                   A unique <br className="md:hidden" /> glass Ashtray
                 </span>
               </div>
-              <div className="product relative border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product relative border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular md:text-2xl text-nowrap text-right">
                   Double side photo <br /> frame two in one
                 </span>
