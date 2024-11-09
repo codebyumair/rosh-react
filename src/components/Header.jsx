@@ -20,7 +20,7 @@ const Header = () => {
       <motion.header
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 3 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 1 }}
         exit={{ opacity: 0, y: -100 }}
         className="flex  items-center justify-between md:px-16 px-4 md:py-6 py-4 fixed w-full"
         style={{ zIndex: 99 }}

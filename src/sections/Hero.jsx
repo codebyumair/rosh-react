@@ -32,7 +32,7 @@ const Hero = () => {
             src={logoWithoutText}
             alt=""
             className="lg:w-[122.9px] md:w-[102px] w-[97.5px] img-without-text mx-auto"
-            style={{ zIndex: 99999 }}
+            style={{ zIndex: 999999 }}
           />
         ) : (
           <>
@@ -128,7 +128,7 @@ const Hero = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
+            className="h-[225px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
           >
             <img
               src={profileDividerGreen}
@@ -183,9 +183,6 @@ const Hero = () => {
           <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 font-dmRegular">
             <BlurText text="Aabid Surti. A man of many talents." delay={50} />
           </h2>
-          {/* <h2 className="w-max font-bold md:text-xl text-lg text-center -mt-2 md:mt-2 md:mb-2 mb-2 font-dmRegular">
-            <BlurText text="A pioneer par excellence." delay={50} />
-          </h2> */}
         </div>
         <div className="px-3">
           <motion.div
@@ -273,7 +270,7 @@ const Hero = () => {
             }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
             whileInView="visible"
-            className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
+            className="h-[225px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
           >
             <img
               src={profileDividerGreen}

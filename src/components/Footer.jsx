@@ -9,12 +9,12 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary bg-opacity-[.88] w-full md:px-24 px-6 flex items-center justify-center py-6">
-      <div className="md:w-[1000px] font-ebGroundRegular ">
+    <footer className="bg-primary w-full md:px-24 px-6 flex items-center justify-center py-6">
+      <div className="md:w-[1000px] font-ebGroundRegular leading-4 ">
         <img
-          src={dividerGreen}
+          src={profileDividerGreen}
           alt=""
-          className="w-[500px] md:w-full mx-auto"
+          className="md:w-[160px] w-[100px] mx-auto"
         />
         <div className="text-center py-2">
           <h2 className="text-xl md:text-2xl font-bold font-dmRegular">
@@ -24,12 +24,12 @@ const Footer = () => {
             Fusion & Stained Glass Artist (Customised Designs)
           </p>
           <p className="font-semibold md:text-lg">
-            +91 9769556070, +91 7977043269
+            +91 9769556070, +91 7977043269, roshpoetryinglass@gmail.com
           </p>
-          <p className="font-semibold md:text-lg">
+          <p className="font-semibold md:text-lg hidden">
             roshpoetryinglass@gmail.com
           </p>
-          <p className="font-semibold md:text-lg">
+          <p className="font-semibold md:text-lg mt-3 md:mt-1">
             Studio: 191/1530, Motilal Nagar No.1 <br className="md:hidden" />{" "}
             Goregaon (West), Mumbai: 400062
           </p>
@@ -41,7 +41,11 @@ const Footer = () => {
           <RiTwitterXFill className="bg-black text-white rounded-full size-6 p-1" />
           <IoLogoWhatsapp className="bg-black text-white rounded-full size-6 p-1" />
         </div>
-        <img src={dividerRed} alt="" className="w-[500px] md:w-full mx-auto" />
+        <img
+          src={profileDividerRed}
+          alt=""
+          className="md:w-[160px] w-[100px] mx-auto"
+        />
       </div>
     </footer>
   );

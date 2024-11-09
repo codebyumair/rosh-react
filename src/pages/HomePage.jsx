@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "../components/Footer";
 import AboutSection from "../sections/AboutSection";
 import FounderSection from "../sections/FounderSection";
@@ -7,6 +8,9 @@ import ProductSection from "../sections/ProductSection";
 import Test from "../sections/Test";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Hero />
@@ -15,7 +19,7 @@ const HomePage = () => {
       {/* <AboutSection /> */}
       {/* <FounderSection /> */}
       <ProductSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

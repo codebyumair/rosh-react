@@ -26,7 +26,7 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
         <span>Home</span>
       </NavLink>
       <NavLink
-        to="/"
+        to="/about"
         onClick={handleLinkClick}
         className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-2 pr-4"
       >
@@ -36,7 +36,7 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
         <span>about</span>
       </NavLink>
       <NavLink
-        to="/"
+        to="/product/interiors-in-stained-glass"
         onClick={handleLinkClick}
         className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-2 pr-4"
       >
@@ -46,7 +46,7 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
         <span>interiors in stained glass</span>
       </NavLink>
       <NavLink
-        to="/"
+        to="/product/fusion-glass-showpiece"
         onClick={handleLinkClick}
         className="flex items-center gap-2 group hover:bg-secondary transition-all delay-100 rounded-lg p-2 pr-4"
       >

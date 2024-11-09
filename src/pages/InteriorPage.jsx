@@ -7,20 +7,24 @@ import product6 from "../assets/products/A-thick-glass-mural.png";
 import product7 from "../assets/products/A-kitchen-wall-made-by-fused-glass.png";
 import product8 from "../assets/products/Tagged-glass-partition-between-living-room-and-dining.png";
 import product9 from "../assets/products/A-glass-partition-panel-in-Reception-area.png";
-import product10 from "../assets/products/Fusioned-glass-map-of-Indian.png";
-import product11 from "../assets/products/Om-Table-show-piece.png";
-import product12 from "../assets/products/A-unique-glass-Ashtray.png";
-import product13 from "../assets/products/Double-side-photo-frame-two-in-one.png";
+
 import sunrays from "../assets/icons/sunrays.svg";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
-const ProductSection = () => {
+const InteriorPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="background-container">
       <div className="pt-36 pb-16 px-4 md:px-8 bg-primary bg-opacity-[.88] product-container">
+        <h2 className="font-dmRegular md:text-4xl text-center mb-16">
+          Interiors In Stained Glass
+        </h2>
         <div className="container mx-auto">
           <div className="row">
-            <div className="products w-full leading-[1.1rem]">
+            <div className="products w-full">
               <div className="product relative border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={sunrays}
@@ -119,7 +123,7 @@ const ProductSection = () => {
                   className="w-[140px] md:w-[270px]"
                 />
               </div>
-              <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+              <div className="product relative border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product9}
                   alt="product1"
@@ -138,50 +142,6 @@ const ProductSection = () => {
                   />{" "}
                   Reception area
                 </span>
-              </div>
-              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular md:text-2xl text-right text-nowrap">
-                  Fusioned glass <br className="md:hidden inline-flex" /> map of
-                  Indian
-                </span>
-                <img
-                  src={product10}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px]"
-                />
-              </div>
-              <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={product11}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px]"
-                />
-                <span
-                  className="font-dmRegular md:text-2xl text-nowrap
-              "
-                >
-                  Om Table <br className="md:hidden" /> Showpiece
-                </span>
-              </div>
-              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular md:text-2xl text-right text-nowrap">
-                  A unique <br className="md:hidden" /> glass Ashtray
-                </span>
-                <img
-                  src={product12}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px]"
-                />
-              </div>
-              <div className="product relative border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={product13}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px]"
-                />
-                <span className="font-dmRegular md:text-2xl text-nowrap">
-                  Double side photo <br /> frame two in one
-                </span>
                 <img
                   src={sunrays}
                   alt=""
@@ -196,4 +156,4 @@ const ProductSection = () => {
     </div>
   );
 };
-export default ProductSection;
+export default InteriorPage;
