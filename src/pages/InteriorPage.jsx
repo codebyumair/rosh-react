@@ -29,7 +29,7 @@ const InteriorPage = () => {
                 <img
                   src={sunrays}
                   alt=""
-                  className="absolute size-10 -top-[1.20rem] md:left-[100%]  left-[105%] translate-x-[-50%]"
+                  className="absolute size-10 -top-[1.30rem] md:left-[100%]  left-[105%] translate-x-[-50%]"
                 />
                 <img
                   src={product1}
@@ -145,7 +145,7 @@ const InteriorPage = () => {
                 <img
                   src={sunrays}
                   alt=""
-                  className="absolute size-10 -bottom-[1.20rem] md:left-[100%] left-[105%] translate-x-[-50%]"
+                  className="absolute size-10 -bottom-[1.30rem] md:left-[100%] left-[105%] translate-x-[-50%]"
                 />
               </div>
             </div>

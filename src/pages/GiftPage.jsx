@@ -53,7 +53,7 @@ const GiftPage = () => {
                 <img
                   src={sunrays}
                   alt=""
-                  className="absolute size-10 -top-[1.20rem] md:left-[100%]  left-[105%] translate-x-[-50%]"
+                  className="absolute size-10 -top-[1.30rem] md:left-[100%]  left-[105%] translate-x-[-50%]"
                 />
                 <img
                   src={product10}
@@ -100,7 +100,7 @@ const GiftPage = () => {
                 <img
                   src={sunrays}
                   alt=""
-                  className="absolute size-10 -bottom-[1.20rem] md:left-[0%] left-[0%] translate-x-[-50%] scale-x-[-1]"
+                  className="absolute size-10 -bottom-[1.30rem] md:left-[0%] left-[0%] translate-x-[-50%] scale-x-[-1]"
                 />
               </div>
             </div>
