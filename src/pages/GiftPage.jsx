@@ -63,7 +63,7 @@ const GiftPage = () => {
         <div className="container mx-auto">
           <div className="row">
             <div className="products w-full">
-              <div className="product relative w-fit md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
+              <div className="product relative w-[90%] md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
                 <div className="relative">
                   <img
                     src={sunrays}
@@ -82,7 +82,7 @@ const GiftPage = () => {
                   Indian
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-fit md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[1px] flex items-center justify-end md:gap-5 gap-3">
                 <span
                   className="font-dmRegular text-sm  text-right md:text-2xl text-nowrap
               "
@@ -96,7 +96,7 @@ const GiftPage = () => {
                   onClick={() => openModal(images[1])}
                 />
               </div>
-              <div className="product border border-r-0 border-black w-fit md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+              <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product12}
                   alt="product1"
@@ -107,7 +107,7 @@ const GiftPage = () => {
                   A unique <br className="md:hidden" /> glass Ashtray
                 </span>
               </div>
-              <div className="product relative ml-auto w-fit md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular text-sm  md:text-2xl text-nowrap text-right">
                   Double side photo <br /> frame two in one
                 </span>
@@ -147,11 +147,7 @@ const GiftPage = () => {
             <img
               src={mainImage}
               alt=""
-              className={`w-full object-contain ${
-                selectedImage.id === 1 || selectedImage.id === 5
-                  ? "h-[480px] w-auto"
-                  : "h-auto"
-              }`}
+              className="w-full object-contain h-auto"
             />
             {console.log(selectedImage.id)}
             {selectedImage.additionalImages.length > 0 && (

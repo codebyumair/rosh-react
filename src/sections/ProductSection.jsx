@@ -109,7 +109,7 @@ const ProductSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="row">
           <div className="products w-full leading-[1.1rem]">
-            <div className="product md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 flex items-center justify-start md:gap-5 gap-3">
+            <div className="product md:rounded-s-[2rem] w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
               <div className="relative">
                 <img
                   src={sunrays}
@@ -127,7 +127,7 @@ const ProductSection = () => {
                 In a washroom mirror
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-fit md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[9px] md:-mt-[12.5px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[1px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular  text-sm md:text-2xl md:text-wrap text-nowrap text-right">
                 Wall hanging <br /> beautiful glass lady
               </span>
@@ -257,7 +257,7 @@ const ProductSection = () => {
                 Om Table <br className="md:hidden" /> Showpiece
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-fit md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap">
                 A unique <br className="md:hidden" /> glass Ashtray
               </span>
@@ -268,7 +268,7 @@ const ProductSection = () => {
                 onClick={() => openModal(images[11])}
               />
             </div>
-            <div className="product relative  w-fit md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product relative  w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[1px] flex items-center justify-start md:gap-5 gap-3">
               <div className="relative">
                 <img
                   src={product13}
