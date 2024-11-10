@@ -109,7 +109,7 @@ const ProductSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="row">
           <div className="products w-full leading-[1.1rem]">
-            <div className="product border-black w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 flex items-center justify-start md:gap-5 gap-3">
+            <div className="product md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 flex items-center justify-start md:gap-5 gap-3">
               <div className="relative">
                 <img
                   src={sunrays}
@@ -138,11 +138,11 @@ const ProductSection = () => {
                 onClick={() => openModal(images[1])}
               />
             </div>
-            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product3}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[2])}
               />
               <span className="font-dmRegular  text-sm md:text-wrap text-nowrap md:text-2xl">
@@ -150,7 +150,7 @@ const ProductSection = () => {
                 Krishna
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
               <span className="hidden md:inline-flex font-dmRegular md:text-2xl text-right">
                 “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A stained
                 glass <br /> mural in a mediation <br /> hall in Bangalore
@@ -162,15 +162,15 @@ const ProductSection = () => {
               <img
                 src={product4}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[3])}
               />
             </div>
-            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product5}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[4])}
               />
               <span className="font-dmRegular  text-sm md:text-2xl text-nowrap md:text-wrap">
@@ -179,29 +179,29 @@ const ProductSection = () => {
                 in conference room
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular  text-sm md:text-2xl text-nowrap">
                 A thick glass mural
               </span>
               <img
                 src={product6}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[5])}
               />
             </div>
-            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product7}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[6])}
               />
               <span className="font-dmRegular  text-sm md:text-2xl text-nowrap md:text-wrap">
                 A kitchen wall made <br /> by fused glass
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap md:text-wrap">
                 Tagged glass partition <br className="md:hidden inline-flex" />
                 between <br className="hidden md:inline-flex" /> living room
@@ -210,15 +210,15 @@ const ProductSection = () => {
               <img
                 src={product8}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[7])}
               />
             </div>
-            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product9}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[8])}
               />
               <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
@@ -231,7 +231,7 @@ const ProductSection = () => {
                 panel Reception area
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap">
                 Fusioned glass <br className="md:hidden inline-flex" /> map of
                 Indian
@@ -239,15 +239,15 @@ const ProductSection = () => {
               <img
                 src={product10}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[9])}
               />
             </div>
-            <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product11}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[10])}
               />
               <span
@@ -257,18 +257,18 @@ const ProductSection = () => {
                 Om Table <br className="md:hidden" /> Showpiece
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-fit md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap">
                 A unique <br className="md:hidden" /> glass Ashtray
               </span>
               <img
                 src={product12}
                 alt="product1"
-                className="w-[140px] md:w-[270px]"
+                className="w-[140px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[11])}
               />
             </div>
-            <div className="product relative border border-0 border-black w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product relative  w-fit md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[1px] flex items-center justify-start md:gap-5 gap-3">
               <div className="relative">
                 <img
                   src={product13}

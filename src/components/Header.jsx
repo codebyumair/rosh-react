@@ -28,6 +28,7 @@ const Header = () => {
         <Link
           to="/"
           className="bg-primary rounded-2xl md:p-3 p-2 border border-borderColor"
+          onClick={toggleNavbar}
         >
           <img src={logo} alt="Rosh-Logo" className="md:w-[90px] w-[60px]" />
         </Link>
