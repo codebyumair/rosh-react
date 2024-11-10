@@ -93,30 +93,32 @@ const InteriorPage = () => {
         <div className="container mx-auto">
           <div className="row">
             <div className="products w-full">
-              <div className="product relative border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={sunrays}
-                  alt=""
-                  className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[100%]  left-[105%] translate-x-[-50%]"
-                />
-                <img
-                  src={product1}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px]"
-                  onClick={() => openModal(images[0])}
-                />
+              <div className="product relative border border-0 border-black w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 flex items-center justify-start md:gap-5 gap-3">
+                <div className="relative">
+                  <img
+                    src={sunrays}
+                    alt=""
+                    className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[100%] left-[105%] translate-x-[-50%] "
+                  />
+                  <img
+                    src={product1}
+                    alt="product1"
+                    className="w-[140px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-3xl "
+                    onClick={() => openModal(images[0])}
+                  />
+                </div>
                 <span className="font-dmRegular text-sm  text-nowrap md:text-wrap md:text-2xl">
                   In a washroom mirror
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product border border-l-0 border-black ml-auto w-fit md:w-[90%] md:rounded-e-[2rem]  rounded-e-3xl -mt-[9px] md:-mt-[12.5px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular text-sm  md:text-2xl md:text-wrap text-nowrap text-right">
                   Wall hanging <br /> beautiful glass lady
                 </span>
                 <img
                   src={product2}
                   alt="product1"
-                  className="w-[140px] md:w-[270px]"
+                  className="w-[140px] md:w-[270px] md:p-3 p-2"
                   onClick={() => openModal(images[1])}
                 />
               </div>
@@ -185,7 +187,7 @@ const InteriorPage = () => {
                   A kitchen wall made <br /> by fused glass
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product border border-l-0 border-black ml-auto  w-[90%] md:rounded-e-[2rem] rounded-e-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap md:text-wrap">
                   Tagged glass partition{" "}
                   <br className="md:hidden inline-flex" />
@@ -199,13 +201,21 @@ const InteriorPage = () => {
                   onClick={() => openModal(images[7])}
                 />
               </div>
-              <div className="product relative border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl md:p-3 p-2 -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={product9}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px]"
-                  onClick={() => openModal(images[8])}
-                />
+              <div className="product relative border border-0 border-black w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+                <div className="relative">
+                  <img
+                    src={product9}
+                    alt="product1"
+                    className="w-[140px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-3xl"
+                    onClick={() => openModal(images[8])}
+                  />
+                  <img
+                    src={sunrays}
+                    alt=""
+                    className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[100%] left-[105%] translate-x-[-50%]"
+                  />
+                </div>
+
                 <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
                   A glass partition in
                   <br
@@ -215,11 +225,6 @@ const InteriorPage = () => {
                   <br className="md:inline-flex hidden" />
                   panel Reception area
                 </span>
-                <img
-                  src={sunrays}
-                  alt=""
-                  className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[100%] left-[105%] translate-x-[-50%]"
-                />
               </div>
             </div>
           </div>
