@@ -10,24 +10,14 @@ import { BlurText } from "../components/BlurText";
 
 const FounderTwo = () => {
   return (
-    <div className="md:h-screen h-screen hero-section sticky top-0">
-      <div className="bg-opacity-[.88] bg-primary h-full md:pt-36 pt-44 pb-8 px-4 md:px-0">
-        <motion.img
-          initial="hidden"
-          viewport={{ once: true }}
-          variants={{
-            visible: { opacity: 1 },
-            hidden: { opacity: 0 },
-          }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
-          whileInView="visible"
-          src={logo}
-          alt=""
-          className="sticky md:w-[160px] w-[140px] mx-auto translate-x-[-50%] left-[50%]"
-        />
-        <h2 className="font-bold mx-auto text-center my-4 font-dmRegular">
+    <>
+      <img src={logo} alt="" className="md:w-[350px] w-[260px] mx-auto" />
+      <div className="flex md:flex-row flex-col items-center justify-center h-fit">
+        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 mb-2 font-dmRegular">
           <BlurText text="Aabid Surti. A man of many talents." delay={50} />
         </h2>
+      </div>
+      <div className="px-3">
         <motion.div
           initial="hidden"
           viewport={{ once: true }}
@@ -37,14 +27,14 @@ const FounderTwo = () => {
           }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           whileInView="visible"
-          className="profile-desc md:w-[78ch] text-pretty mx-auto text-center py-2 px-4 bg-primary rounded-2xl md:h-[300px] overflow-y-scroll h-[320px]"
+          className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
         >
           <img
             src={profileDividerGreen}
             alt=""
-            className="md:w-[140px] w-[120px] mx-auto"
+            className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
+          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             National Award-winning author Aabid Surti is a versatile artist,
             celebrated for his remarkable contributions across various creative
             disciplines. His brilliance shines not only in literature but also
@@ -53,13 +43,13 @@ const FounderTwo = () => {
             both in India and internationally, captivating audiences with his
             distinctive artistic vision.
           </p>
-          <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
+          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             Early in his career, Surti pioneered a groundbreaking technique
             known as 'mirror collage,' a form of art that caught the attention
             of global critics, earning particular praise in Japan for its
             originality and depth.
           </p>
-          <p className="my-2 text-sm md:text-lg font-ebGroundRegular">
+          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             In 1971, the Indian government honoured his contributions by
             commissioning a short film that highlighted his creative genius.
             Surti's talents extend beyond the canvas. As a gifted cartoonist, he
@@ -68,10 +58,11 @@ const FounderTwo = () => {
             continues to make a mark with his boundless creativity and his
             ability to move seamlessly between artistic forms.
           </p>
+
           <img
             src={profileDividerRed}
             alt=""
-            className="md:w-[140px] w-[120px] mx-auto"
+            className="md:w-[140px] w-[100px] mx-auto"
           />
         </motion.div>
         <motion.div
@@ -83,15 +74,15 @@ const FounderTwo = () => {
           }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           whileInView="visible"
-          className="flex items-center justify-center mt-3 gap-2"
+          className="flex items-center justify-center mt-4 gap-2"
         >
-          <IoLogoInstagram className="bg-secondary text-white rounded-full size-6 p-1" />
-          <TiSocialFacebook className="bg-secondary text-white rounded-full size-6 p-1" />
-          <RiTwitterXFill className="bg-secondary text-white rounded-full size-6 p-1" />
-          <IoLogoWhatsapp className="bg-secondary text-white rounded-full size-6 p-1" />
+          <IoLogoInstagram className="bg-secondary text-white rounded-full size-7 p-1" />
+          <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />
+          <RiTwitterXFill className="bg-secondary text-white rounded-full size-7 p-1" />
+          <IoLogoWhatsapp className="bg-secondary text-white rounded-full size-7 p-1" />
         </motion.div>
       </div>
-    </div>
+    </>
   );
 };
 export default FounderTwo;
