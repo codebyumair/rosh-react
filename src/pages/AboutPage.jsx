@@ -18,15 +18,14 @@ const AboutPage = () => {
         <div className="h-screen bg-primary bg-opacity-[.88] md:pt-40 pt-24 md:px-16 snap-start">
           <FounderTwo />
         </div>
-        <div className="h-screen overflow-y-scroll  bg-primary bg-opacity-[.88] md:pt-40 pt-24 md:px-16 snap-start">
-          <FounderThree />
-          <div className="pt-16">
+        <div className="h-screen overflow-y-scroll bg-primary bg-opacity-[.88] md:pt-40 pt-24 md:px-16 snap-start">
+          <div className="h-full">
+            <FounderThree />
+          </div>
+          <div>
             <Footer />
           </div>
         </div>
-        {/* <div className="bg-primary snap-start">
-          <Footer />
-        </div> */}
       </div>
     </>
   );

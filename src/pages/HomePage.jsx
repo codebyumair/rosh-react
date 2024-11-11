@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import HeroSection from "../sections/HeroSection";
 import AboutSection from "../sections/AboutSection";
 import FounderOne from "../sections/FounderOne";
@@ -8,19 +8,28 @@ import ProductSection from "../sections/ProductSection";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   const handleContextMenu = (e) => {
     e.preventDefault();
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    setIsLoaded(true); // Set `isLoaded` to true every time the HomePage mounts
+
+    return () => {
+      setIsLoaded(false); // Reset `isLoaded` when unmounting to allow reload
+    };
+  }, []); // This will run each time the HomePage is visited
+
   return (
     <div
       onContextMenu={handleContextMenu}
       className="home h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory"
     >
       <div className="h-screen md:pt-40 pt-24 relative snap-start">
-        <HeroSection />
+        {isLoaded && <HeroSection />}
       </div>
       <div className="h-screen bg-primary bg-opacity-[.88] md:pt-40 pt-24 snap-start">
         <AboutSection />
@@ -43,4 +52,5 @@ const HomePage = () => {
     </div>
   );
 };
+
 export default HomePage;

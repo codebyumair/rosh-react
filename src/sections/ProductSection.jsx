@@ -127,7 +127,7 @@ const ProductSection = () => {
                 In a washroom mirror
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular  text-sm md:text-2xl md:text-wrap text-nowrap text-right">
                 Wall hanging <br /> beautiful glass lady
               </span>
@@ -150,7 +150,7 @@ const ProductSection = () => {
                 Krishna
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span className="hidden md:inline-flex font-dmRegular md:text-2xl text-right">
                 “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A stained
                 glass <br /> mural in a mediation <br /> hall in Bangalore
@@ -179,7 +179,7 @@ const ProductSection = () => {
                 in conference room
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular  text-sm md:text-2xl text-nowrap">
                 A thick glass mural
               </span>
@@ -243,7 +243,7 @@ const ProductSection = () => {
                 onClick={() => openModal(images[9])}
               />
             </div>
-            <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product11}
                 alt="product1"

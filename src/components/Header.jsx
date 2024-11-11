@@ -7,28 +7,55 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
-  const [loading, setLoading] = useState(true);
   const navRef = useRef();
+  const headerRef = useRef();
 
   const toggleNavbar = () => {
     setNavbar(!navbar);
     navRef.current.classList.toggle("toggle-navbar");
   };
 
+  const handleLinkClick = () => {
+    setNavbar(false);
+    navRef.current.classList.remove("toggle-navbar");
+  };
+
+  // Close the navbar if clicking outside of the header or navbar
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        navRef.current &&
+        headerRef.current &&
+        !navRef.current.contains(event.target) &&
+        !headerRef.current.contains(event.target)
+      ) {
+        setNavbar(false);
+        navRef.current.classList.remove("toggle-navbar");
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <motion.header
+        ref={headerRef}
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 1 }}
         exit={{ opacity: 0, y: -100 }}
-        className="flex  items-center justify-between md:px-16 px-4 md:py-6 py-4 fixed w-full"
+        className="flex items-center justify-between md:px-16 px-4 md:py-6 py-4 fixed w-full"
         style={{ zIndex: 99 }}
       >
         <Link
           to="/"
           className="bg-primary rounded-2xl md:p-3 p-2 border border-borderColor"
-          onClick={toggleNavbar}
+          onClick={handleLinkClick}
         >
           <img src={logo} alt="Rosh-Logo" className="md:w-[90px] w-[60px]" />
         </Link>
@@ -55,4 +82,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;
