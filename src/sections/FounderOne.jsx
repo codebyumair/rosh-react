@@ -37,11 +37,11 @@ const FounderOne = () => {
             alt=""
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem] text-center mx-auto">
             Abdullah Khandwani, a creator at heart, is an eminent and renowned
-            stained-glass artist from India. He has been instrumental in
-            popularizing the art and craft across India and Canada over the past
-            three decades.
+            stained-glass artist from India. <br className="hidden md:inline" />
+            He has been instrumental in popularizing the art and craft across
+            India and Canada over the past three decades.
           </p>
           <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             Abdullah Khandwani's innovative approach to glass art reflects a
