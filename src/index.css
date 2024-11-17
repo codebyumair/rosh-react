@@ -21,10 +21,6 @@ body {
   scroll-behavior: smooth !important;
 }
 
-img {
-  /* pointer-events: none; */
-}
-
 details summary::-webkit-details-marker {
   display: none !important;
 }

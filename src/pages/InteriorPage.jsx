@@ -1,14 +1,15 @@
-import product1 from "../assets/products/In-a-washroom-mirror.png";
-import product2 from "../assets/products/Wall-hanging-beautiful-glass-lady.png";
-import product3 from "../assets/products/For-wall-Hanging-Krishna.png";
-import product4 from "../assets/products/INTERNATIONAL-SCHOOL-OF-ANCIENT-WISDOM.png";
-import product5 from "../assets/products/Stained-glass-ceiling-in-conference-room.png";
-import product6 from "../assets/products/A-thick-glass-mural.png";
-import product7 from "../assets/products/A-kitchen-wall-made-by-fused-glass.png";
-import product8 from "../assets/products/Tagged-glass-partition-between-living-room-and-dining.png";
-import product9 from "../assets/products/A-glass-partition-panel-in-Reception-area.png";
+import product1 from "../assets/products/INTERNATION-SCHOOL-Frame-1.png";
+import product2 from "../assets/products/Tagged-Glass-Partition-Frame-2.png";
+import product3 from "../assets/products/A-Kitchen-Wall-Frame-3.png";
+import product4 from "../assets/products/A-Glass-Partition-Frame-4.png";
+import product5 from "../assets/products/A-Thick-Glass-Mural-Frame-5.png";
+import product6 from "../assets/products/Stained-Glass-Ceiling-Frame-6.png";
+import product7 from "../assets/products/door-in-Living-Room-Frame-7.png";
+import product8 from "../assets/products/Washbasin-Mirror-frame-8.png";
 import sunrays from "../assets/icons/sunrays.svg";
 import Footer from "../components/Footer";
+import green from "../assets/icons/green.svg";
+import red from "../assets/icons/red.svg";
 import { useState, useEffect } from "react";
 import { MdClose } from "react-icons/md";
 import { productImages } from "../data/products";
@@ -87,13 +88,23 @@ const InteriorPage = () => {
   return (
     <div className="background-container overflow-y-scroll h-screen">
       <div className="pt-36 pb-16 px-4 md:px-8 bg-primary bg-opacity-[.88] product-container">
-        <h2 className="font-dmRegular md:text-4xl text-center mb-16">
+        <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
+          <img
+            src={green}
+            alt=""
+            className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] top-[-5px] md:top-[-6px]"
+          />
           Interiors In Stained Glass
+          <img
+            src={red}
+            alt=""
+            className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
+          />
         </h2>
-        <div className="container mx-auto">
+        <div className="container mx-auto md:px-8 px-0">
           <div className="row">
-            <div className="products w-full">
-              <div className="product relative w-[90%] md:rounded-s-[2rem] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
+            <div className="products w-full leading-[1.1rem]">
+              <div className="product md:rounded-s-[2rem] md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-5">
                 <div className="relative">
                   <img
                     src={sunrays}
@@ -107,43 +118,53 @@ const InteriorPage = () => {
                     onClick={() => openModal(images[0])}
                   />
                 </div>
-                <span className="font-dmRegular text-sm  text-nowrap md:text-wrap md:text-2xl">
-                  In a washroom mirror
+                <span className="font-dmRegular text-sm text-nowrap md:text-2xl ">
+                  <span className="hidden md:inline-flex font-dmRegular md:text-2xl text-left">
+                    “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
+                    Stained-glass <br /> mural in a mediation <br /> hall in
+                    Bangalore <br /> (palnet Earth)
+                  </span>
+                  <span className="md:hidden font-dmRegular text-sm md:text-2xl text-right text-nowrap md:text-wrap">
+                    “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
+                    Stained-glass <br /> mural in a mediation <br /> hall in
+                    Bangalore <br /> (planet Earth)
+                  </span>
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular text-sm  md:text-2xl md:text-wrap text-nowrap text-right">
-                  Wall hanging <br /> beautiful glass lady
+              <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-5">
+                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap md:text-wrap text-right">
+                  Tagged Glass Partition{" "}
+                  <br className="md:hidden inline-flex" />
+                  between <br className="hidden md:inline-flex" /> Living Room
+                  <br className="md:hidden inline-flex" /> and Dining
                 </span>
                 <img
                   src={product2}
                   alt="product1"
-                  className="w-[140px] md:w-[270px] md:p-3 p-2"
+                  className="w-[140px] md:w-[270px] p-2 md:p-3"
                   onClick={() => openModal(images[1])}
                 />
               </div>
-              <div className="product border border-r-0 border-black md:w-[90%] w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
+              <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-start md:gap-5 gap-5">
                 <img
                   src={product3}
                   alt="product1"
                   className="w-[140px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[2])}
                 />
-                <span className="font-dmRegular text-sm  md:text-wrap text-nowrap md:text-2xl">
-                  For wall <br className="md:hidden inline-block" /> Hanging
-                  Krishna
+                <span className="font-dmRegular  text-sm md:text-2xl text-nowrap md:text-wrap">
+                  A Kitchen Wall Made <br /> by Fused Glass
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto md:w-[90%] w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="hidden md:inline-flex font-dmRegular md:text-2xl text-right">
-                  “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
-                  stained glass <br /> mural in a mediation <br /> hall in
-                  Bangalore
-                </span>
-                <span className="md:hidden font-dmRegular text-sm md:text-2xl text-right text-nowrap md:text-wrap">
-                  “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
-                  stained glass <br /> mural in a mediation <br /> hall in
-                  Bangalore
+              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-5">
+                <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
+                  A Glass Partition Panel
+                  <br
+                    className="
+                inline-flex md:hidden"
+                  />{" "}
+                  <br className="md:inline-flex hidden" />
+                  in Reception area
                 </span>
                 <img
                   src={product4}
@@ -152,22 +173,22 @@ const InteriorPage = () => {
                   onClick={() => openModal(images[3])}
                 />
               </div>
-              <div className="product border border-r-0 border-black md:w-[90%] w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[.9px] flex items-center justify-start md:gap-5 gap-3">
+              <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-5">
                 <img
                   src={product5}
                   alt="product1"
                   className="w-[140px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[4])}
                 />
-                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap md:text-wrap">
-                  Stained glass ceiling
-                  <br className="md:inline-flex flex" />
-                  in conference room
+                <span className="font-dmRegular  text-sm md:text-2xl text-nowrap capitalize">
+                  A thick glass mural
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto md:w-[90%] w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
-                  A thick glass mural
+              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-5">
+                <span className="font-dmRegular text-right text-sm md:text-2xl text-nowrap md:text-wrap">
+                  Stained Glass Ceiling
+                  <br className="md:inline-flex flex" />
+                  in Conference Room
                 </span>
                 <img
                   src={product6}
@@ -176,55 +197,35 @@ const InteriorPage = () => {
                   onClick={() => openModal(images[5])}
                 />
               </div>
-              <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-start md:gap-5 gap-3">
+              <div className="product border border-r-0 border-black w-[90%] md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-start md:gap-5 gap-5">
                 <img
                   src={product7}
                   alt="product1"
                   className="w-[140px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[6])}
                 />
-                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap md:text-wrap">
-                  A kitchen wall made <br /> by fused glass
+                <span className="font-dmRegular  text-sm md:text-2xl text-nowrap md:text-wrap">
+                  Door in Living Room <br /> (Fused Glass)
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+
+              <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.5px] flex items-center justify-end md:gap-5 gap-5">
                 <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap md:text-wrap">
-                  Tagged glass partition{" "}
-                  <br className="md:hidden inline-flex" />
-                  between <br className="hidden md:inline-flex" /> living room
-                  <br className="md:hidden inline-flex" /> and dining
+                  Washbasin Mirror
                 </span>
-                <img
-                  src={product8}
-                  alt="product1"
-                  className="w-[140px] md:w-[270px] md:p-3 p-2 "
-                  onClick={() => openModal(images[7])}
-                />
-              </div>
-              <div className="product relative w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[1px] flex items-center justify-start md:gap-5 gap-3">
                 <div className="relative">
                   <img
-                    src={product9}
+                    src={product8}
                     alt="product1"
-                    className="w-[140px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-3xl"
-                    onClick={() => openModal(images[8])}
+                    className="w-[140px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-3xl "
+                    onClick={() => openModal(images[7])}
                   />
                   <img
                     src={sunrays}
                     alt=""
-                    className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[100%] left-[105%] translate-x-[-50%]"
+                    className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[0%] left-[0%] translate-x-[-50%] scale-x-[-1]"
                   />
                 </div>
-
-                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
-                  A glass partition in
-                  <br
-                    className="
-                inline-flex md:hidden"
-                  />{" "}
-                  <br className="md:inline-flex hidden" />
-                  panel Reception area
-                </span>
               </div>
             </div>
           </div>
@@ -245,12 +246,11 @@ const InteriorPage = () => {
             >
               <MdClose />
             </button>
-            x
             <img
               src={mainImage}
               alt=""
-              className={`w-full object-contain ${
-                selectedImage.id === 1 || selectedImage.id === 5
+              className={` w-full object-contain ${
+                selectedImage.id === 6 || selectedImage.id === 8
                   ? "h-[480px] w-auto"
                   : "h-auto"
               }`}

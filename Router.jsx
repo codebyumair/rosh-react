@@ -4,12 +4,20 @@ import HomePage from "./src/pages/HomePage";
 import InteriorPage from "./src/pages/InteriorPage";
 import GiftPage from "./src/pages/GiftPage";
 import AboutPage from "./src/pages/AboutPage";
+import ContactPage from "./src/pages/ContactPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <div>ERROR OCCURED</div>,
+    errorElement: (
+      <div
+        className="flex items-center justify-center h-screen w-full bg-primary bg-opacity-[.88] fixed top-0 left-0"
+        style={{ zIndex: 999999 }}
+      >
+        NOT FOUND
+      </div>
+    ),
     children: [
       {
         path: "/",
@@ -29,8 +37,8 @@ const router = createBrowserRouter([
         element: <GiftPage />,
       },
       {
-        path: "*",
-        element: <div>NOT FOUND</div>,
+        path: "/contact",
+        element: <ContactPage />,
       },
     ],
   },

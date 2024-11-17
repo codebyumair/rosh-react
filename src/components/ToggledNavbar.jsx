@@ -26,6 +26,16 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
         <span>Home</span>
       </NavLink>
       <NavLink
+        to="/contact"
+        onClick={handleLinkClick}
+        className="flex items-center gap-2 group hover:bg-secondary active:bg-secondary transition-all delay-100 rounded-lg p-2 pr-4"
+      >
+        {/* <div className="w-[30px] h-[30px] rounded-md bg-borderColor flex items-center justify-center">
+          <img src={home} alt="" className="w-[24px]" />
+        </div> */}
+        <span>Contact</span>
+      </NavLink>
+      <NavLink
         to="/about"
         onClick={handleLinkClick}
         className="flex items-center gap-2 group hover:bg-secondary active:bg-secondary transition-all delay-100 rounded-lg p-2 pr-4"
