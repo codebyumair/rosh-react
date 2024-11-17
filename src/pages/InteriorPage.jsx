@@ -119,12 +119,12 @@ const InteriorPage = () => {
                 <span className="font-dmRegular text-sm text-nowrap md:text-2xl ">
                   <span className="hidden md:inline-flex font-dmRegular md:text-2xl text-left">
                     “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
-                    Stained-glass <br /> mural in a mediation <br /> hall in
+                    Stained-glass <br /> mural in a meditation <br /> hall in
                     Bangalore (Planet Earth)
                   </span>
                   <span className="md:hidden font-dmRegular text-sm md:text-2xl text-right text-nowrap md:text-wrap">
                     “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
-                    Stained-glass <br /> mural in a mediation <br /> hall in
+                    Stained-glass <br /> mural in a meditation <br /> hall in
                     Bangalore <br /> (Planet Earth)
                   </span>
                 </span>
