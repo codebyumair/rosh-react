@@ -38,11 +38,13 @@ const FounderThree = () => {
             className="md:w-[140px] w-[100px] mx-auto"
           />
           <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
-            Roshan Ali Khan is a celebrated stained-glass artist with over 25
-            years of experience in crafting and captivating large-scale murals.
-            Her passion for the art form is showcased through her Mumbai-based
-            studio, a hub of creativity and craftsmanship, and a showcase of her
-            immense talent.
+            Roshan Ali Khan is a celebrated <br className="md:hidden" />{" "}
+            stained-glass artist with over 25 years of experience in crafting
+            and captivating <br className="md:hidden" />
+            large-scale murals. Her passion for the art form is showcased
+            through her <br className="" />
+            Mumbai-based studio, a hub of creativity and craftsmanship, and a
+            showcase of her immense talent.
           </p>
           <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             Khan's passion for stained glass work was ignited by two influential
@@ -51,7 +53,8 @@ const FounderThree = () => {
             acclaimed painter, writer, and cartoonist.
           </p>
           <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
-            Their guidance has played a pivotal role in shaping her artistic
+            Their guidance has played a pivotal role in shaping her artistic{" "}
+            <br className="md:hidden" />
             journey and illuminating the stained-glass art form scene in the
             country with her unparalleled expertise.
           </p>

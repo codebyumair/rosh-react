@@ -131,12 +131,12 @@ const ProductSection = () => {
                 <span className="hidden md:inline-flex font-dmRegular md:text-2xl text-left">
                   “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
                   Stained-glass <br /> mural in a meditation <br /> hall in
-                  Bangalore (planet Earth)
+                  Bangalore (Planet Earth)
                 </span>
                 <span className="md:hidden font-dmRegular text-sm md:text-2xl text-left text-nowrap md:text-wrap">
                   “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
                   Stained-glass <br /> mural in a meditation <br /> hall in
-                  Bangalore <br /> (planet Earth)
+                  Bangalore <br /> (Planet Earth)
                 </span>
               </span>
             </div>
@@ -172,7 +172,7 @@ const ProductSection = () => {
                 inline-flex md:hidden"
                 />{" "}
                 <br className="md:inline-flex hidden" />
-                in Reception area
+                in Reception Area
               </span>
               <img
                 src={product4}

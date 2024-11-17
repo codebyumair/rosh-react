@@ -27,7 +27,7 @@ const FounderTwo = () => {
           }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           whileInView="visible"
-          className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-0 py-4 md:py-4"
+          className="h-[250px] md:h-[200px] md:flex items-start justify-start flex-col gap-2 profile-desc overflow-y-scroll lg:w-[120ch] text-balance text-center mx-auto bg-primary rounded-2xl px-4 md:px-4 py-4 md:py-4"
         >
           <img
             src={profileDividerGreen}
@@ -39,9 +39,9 @@ const FounderTwo = () => {
             celebrated for his remarkable contributions across various creative
             disciplines. His brilliance shines not only in literature but also
             in the visual arts, where he has earned widespread acclaim as a
-            painter. Over the years, he has held 16 prestigious exhibitions,
-            both in India and internationally, captivating audiences with his
-            distinctive artistic vision.
+            painter. <br className="hidden md:inline" /> Over the years, he has
+            held 16 prestigious exhibitions, both in India and internationally,
+            captivating audiences with <br /> his distinctive artistic vision.
           </p>
           <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             Early in his career, Surti pioneered a groundbreaking technique
@@ -52,11 +52,12 @@ const FounderTwo = () => {
           <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
             In 1971, the Indian government honoured his contributions by
             commissioning a short film that highlighted his creative genius.
-            Surti's talents extend beyond the canvas. As a gifted cartoonist, he
-            brought to life 'Dabbuji,' the beloved simpleton whose witty and
-            endearing antics resonated with countless readers. Aabid Surti
-            continues to make a mark with his boundless creativity and his
-            ability to move seamlessly between artistic forms.
+            Surti's talents extend beyond the canvas.{" "}
+            <br className="md:hidden" /> As a gifted cartoonist, he brought to
+            life 'Dabbuji,' the beloved simpleton whose witty and endearing
+            antics resonated with countless readers. Aabid Surti continues to
+            make a mark with his boundless creativity and his ability to move
+            seamlessly between artistic forms.
           </p>
 
           <img
