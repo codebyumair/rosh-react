@@ -113,7 +113,7 @@ const GiftPage = () => {
                   Glass
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
                 <span
                   className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap
               "
@@ -152,34 +152,32 @@ const GiftPage = () => {
                   onClick={() => openModal(images[3])}
                 />
               </div>
-              <div className="product relative  w-[90%] border border-r-0 border-black md:p-3 p-2 rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
+              <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product13}
                   alt="product1"
-                  className="w-[150px] md:w-[270px] "
+                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[4])}
                 />{" "}
                 <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
                   Double Side Photo <br /> Frame Two in One
                 </span>
               </div>
-              <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.5px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular text-sm  md:text-2xl text-nowrap text-right">
                   A Unique Glass Ashtray
                 </span>
-                <div className="relative">
-                  <img
-                    src={product14}
-                    alt="product1"
-                    className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
-                    onClick={() => openModal(images[5])}
-                  />
-                  <img
-                    src={sunrays}
-                    alt=""
-                    className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[0%] left-[0%] translate-x-[-50%] scale-x-[-1]"
-                  />
-                </div>
+                <img
+                  src={product14}
+                  alt="product1"
+                  className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
+                  onClick={() => openModal(images[13])}
+                />
+                <img
+                  src={sunrays}
+                  alt=""
+                  className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[70%] left-[50%] translate-x-[-50%] scale-x-[-1]"
+                />
               </div>
             </div>
           </div>

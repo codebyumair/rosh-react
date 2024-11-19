@@ -129,7 +129,7 @@ const InteriorPage = () => {
                   </span>
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular text-sm  md:text-2xl text-nowrap md:text-wrap text-right">
                   Tagged Glass Partition{" "}
                   <br className="md:hidden inline-flex" />
@@ -154,7 +154,7 @@ const InteriorPage = () => {
                   A Kitchen Wall Made <br /> by Fused Glass
                 </span>
               </div>
-              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+              <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
                 <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
                   A Glass Partition Panel
                   <br

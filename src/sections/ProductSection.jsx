@@ -140,7 +140,7 @@ const ProductSection = () => {
                 </span>
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm  md:text-2xl text-nowrap md:text-wrap text-right">
                 Tagged Glass Partition <br className="md:hidden inline-flex" />
                 between <br className="hidden md:inline-flex" /> Living Room
@@ -164,7 +164,7 @@ const ProductSection = () => {
                 A Kitchen Wall Made <br /> by Fused Glass
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
                 A Glass Partition Panel
                 <br
@@ -278,33 +278,32 @@ const ProductSection = () => {
                 onClick={() => openModal(images[11])}
               />
             </div>
-            <div className="product relative  w-[90%] border border-r-0 border-black md:p-3 p-2 rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
+            <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
               <img
                 src={product13}
                 alt="product1"
-                className="w-[150px] md:w-[270px] "
+                className="w-[150px] md:w-[270px] md:p-3 p-2 "
                 onClick={() => openModal(images[12])}
               />{" "}
               <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
                 Double Side Photo <br /> Frame Two in One
               </span>
             </div>
-            <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.5px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span className="font-dmRegular text-sm  md:text-2xl text-nowrap text-right">
                 A Unique Glass Ashtray
               </span>
               <img
                 src={product14}
                 alt="product1"
-                className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl"
+                className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
                 onClick={() => openModal(images[13])}
               />
               <img
                 src={sunrays}
                 alt=""
-                className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[65%] left-[45%] translate-x-[-50%] scale-x-[-1]"
+                className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[70%] left-[50%] translate-x-[-50%] scale-x-[-1]"
               />
-              <div className="relative"></div>
             </div>
           </div>
         </div>
