@@ -70,7 +70,7 @@ const FounderOne = () => {
           }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           whileInView="visible"
-          className="flex items-center justify-center mt-4 gap-2"
+          className="flex items-center justify-center mt-4 gap-2 hidden"
         >
           <IoLogoInstagram className="bg-secondary text-white rounded-full size-7 p-1" />
           <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />

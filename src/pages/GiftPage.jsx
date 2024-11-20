@@ -78,7 +78,7 @@ const GiftPage = () => {
   }, []);
   return (
     <div className="background-container h-screen overflow-y-scroll">
-      <div className="md:pt-36 pt-28 pb-16 px-4 md:px-8 bg-primary bg-opacity-[.88] product-container">
+      <div className="pt-36 pb-16 px-4 md:px-8 bg-primary bg-opacity-[.88] product-container">
         <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
           <img
             src={green}
