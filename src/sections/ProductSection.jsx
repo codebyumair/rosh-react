@@ -116,17 +116,20 @@ const ProductSection = () => {
         <div className="row">
           <div className="products w-full leading-[1.1rem]">
             <div className="product relative md:rounded-s-[2rem] w-full md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
-              <img
-                src={sunrays}
-                alt=""
-                className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[30%] left-[45%] translate-x-[-50%] "
-              />
-              <img
-                src={product1}
-                alt="product1"
-                className="w-[150px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-2xl md:rounded-s-3xl "
-                onClick={() => openModal(images[0])}
-              />
+              <div className="relative border border-r-0 border-black rounded-s-2xl md:rounded-s-3xl ">
+                <img
+                  src={sunrays}
+                  alt=""
+                  className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[100%] left-[100%] -ml-[.40rem]"
+                />
+                <img
+                  src={product1}
+                  alt="product1"
+                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                  onClick={() => openModal(images[0])}
+                />
+              </div>
+
               <span className="title-font text-sm text-nowrap md:text-2xl ">
                 <span className="hidden md:inline-flex title-font md:text-2xl text-left">
                   “INTERNATIONAL <br /> SCHOOL OF ANCIENT <br /> WISDOM” A
@@ -239,7 +242,7 @@ const ProductSection = () => {
                 Glass
               </span>
             </div>
-            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product border border-l-0 border-black ml-auto w-[50%] md:w-fit md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span
                 className="title-font text-sm text-right  md:text-2xl text-nowrap
               "
@@ -289,21 +292,24 @@ const ProductSection = () => {
                 Double Side Photo <br /> Frame Two in One
               </span>
             </div>
-            <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
+            <div className="product relative ml-auto w-full md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
               <span className="title-font text-sm  md:text-2xl text-nowrap text-right">
                 A Unique Glass Ashtray
               </span>
-              <img
-                src={product14}
-                alt="product1"
-                className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
-                onClick={() => openModal(images[13])}
-              />
-              <img
-                src={sunrays}
-                alt=""
-                className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[70%] left-[50%] translate-x-[-50%] scale-x-[-1]"
-              />
+
+              <div className="relative border border-l-0 border-black rounded-e-2xl md:rounded-e-3xl ">
+                <img
+                  src={sunrays}
+                  alt=""
+                  className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[0%] left-[0%] -ml-[.40rem] scale-x-[-1]"
+                />
+                <img
+                  src={product14}
+                  alt="product1"
+                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                  onClick={() => openModal(images[13])}
+                />
+              </div>
             </div>
           </div>
         </div>

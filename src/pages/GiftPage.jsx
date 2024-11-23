@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import { productImages } from "../data/products";
 import { useEffect, useState } from "react";
 import { MdClose } from "react-icons/md";
+import Preloader from "../components/Preloader";
 
 const images = [
   {
@@ -49,6 +50,16 @@ const GiftPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [mainImage, setMainImage] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false); // State to control preloader
+
+  useEffect(() => {
+    // Simulate loading time for preloader
+    const timer = setTimeout(() => {
+      setIsLoaded(true); // Set `isLoaded` to true after preloader finishes
+    }, 1500); // Adjust the delay as needed
+
+    return () => clearTimeout(timer); // Clear the timer on unmount
+  });
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -69,147 +80,159 @@ const GiftPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="background-container h-screen overflow-y-scroll">
-      <div className="pt-36 pb-16 px-4 md:px-8 bg-primary bg-opacity-[.88] product-container">
-        <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
-          <img
-            src={green}
-            alt=""
-            className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] top-[-5px] md:top-[-6px]"
-          />
-          Fusion Glass Showpiece
-          <img
-            src={red}
-            alt=""
-            className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
-          />
-        </h2>
-        <div className="container mx-auto">
-          <div className="row">
-            <div className="products w-full leading-[1.1rem]">
-              <div className="product relative md:rounded-s-[2rem] md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={sunrays}
-                  alt=""
-                  className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[30%] left-[45%] translate-x-[-50%] "
-                />
-                <img
-                  src={product9}
-                  alt="product1"
-                  className="w-[150px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-2xl md:rounded-s-3xl "
-                  onClick={() => openModal(images[0])}
-                />
+    <>
+      {!isLoaded ? (
+        <Preloader title="Fusion Glass Showpiece" />
+      ) : (
+        <div className="background-container h-screen overflow-y-scroll">
+          <div className="pt-36 pb-16 px-4 md:px-8 bg-primary bg-opacity-[.88] product-container">
+            <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
+              <img
+                src={green}
+                alt=""
+                className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] top-[-5px] md:top-[-6px]"
+              />
+              Fusion Glass Showpiece
+              <img
+                src={red}
+                alt=""
+                className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
+              />
+            </h2>
+            <div className="container mx-auto">
+              <div className="row">
+                <div className="products w-full leading-[1.1rem]">
+                  <div className="product relative md:rounded-s-[2rem] w-full md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
+                    <div className="relative border border-r-0 border-black  rounded-s-2xl md:rounded-s-3xl ">
+                      <img
+                        src={sunrays}
+                        alt=""
+                        className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[100%] left-[100%] -ml-[.40rem]"
+                      />
+                      <img
+                        src={product9}
+                        alt="product1"
+                        className="w-[150px] md:w-[270px] md:p-3 p-2"
+                        onClick={() => openModal(images[0])}
+                      />
+                    </div>
 
-                <span className="font-dmRegular text-sm  md:text-2xl text-left text-nowrap">
-                  Map of India <br className="md:hidden inline-flex" /> in Fused
-                  Glass
-                </span>
-              </div>
-              <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
-                  Om Table <br className="md:hidden" /> Showpiece
-                </span>
-                <img
-                  src={product10}
-                  alt="product1"
-                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                  onClick={() => openModal(images[1])}
-                />
-              </div>
-              <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px]  flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={product11}
-                  alt="product1"
-                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                  onClick={() => openModal(images[2])}
-                />
-                <span
-                  className="font-dmRegular text-sm  md:text-2xl text-nowrap
+                    <span className="font-dmRegular text-sm  md:text-2xl text-left text-nowrap">
+                      Map of India <br className="md:hidden inline-flex" /> in
+                      Fused Glass
+                    </span>
+                  </div>
+                  <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
+                    <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
+                      Om Table <br className="md:hidden" /> Showpiece
+                    </span>
+                    <img
+                      src={product10}
+                      alt="product1"
+                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                      onClick={() => openModal(images[1])}
+                    />
+                  </div>
+                  <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px]  flex items-center justify-start md:gap-5 gap-3">
+                    <img
+                      src={product11}
+                      alt="product1"
+                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                      onClick={() => openModal(images[2])}
+                    />
+                    <span
+                      className="font-dmRegular text-sm  md:text-2xl text-nowrap
               "
-                >
-                  Krishna in Fused Glass <br className="md:hidden" /> for Wall
-                </span>
-              </div>
-              <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap">
-                  Wall Hanging <br /> Beautiful Glass Lady
-                </span>
-                <img
-                  src={product12}
-                  alt="product1"
-                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                  onClick={() => openModal(images[3])}
-                />
-              </div>
-              <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
-                <img
-                  src={product13}
-                  alt="product1"
-                  className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                  onClick={() => openModal(images[4])}
-                />{" "}
-                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
-                  Double Side Photo <br /> Frame Two in One
-                </span>
-              </div>
-              <div className="product relative ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
-                <span className="font-dmRegular text-sm  md:text-2xl text-nowrap text-right">
-                  A Unique Glass Ashtray
-                </span>
-                <img
-                  src={product14}
-                  alt="product1"
-                  className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
-                  onClick={() => openModal(images[5])}
-                />
-                <img
-                  src={sunrays}
-                  alt=""
-                  className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[70%] left-[50%] translate-x-[-50%] scale-x-[-1]"
-                />
+                    >
+                      Krishna in Fused Glass <br className="md:hidden" /> for
+                      Wall
+                    </span>
+                  </div>
+                  <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
+                    <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap">
+                      Wall Hanging <br /> Beautiful Glass Lady
+                    </span>
+                    <img
+                      src={product12}
+                      alt="product1"
+                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                      onClick={() => openModal(images[3])}
+                    />
+                  </div>
+                  <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
+                    <img
+                      src={product13}
+                      alt="product1"
+                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                      onClick={() => openModal(images[4])}
+                    />{" "}
+                    <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
+                      Double Side Photo <br /> Frame Two in One
+                    </span>
+                  </div>
+                  <div className="product relative ml-auto w-full md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
+                    <span className="title-font text-sm  md:text-2xl text-nowrap text-right">
+                      A Unique Glass Ashtray
+                    </span>
+
+                    <div className="relative border border-l-0 border-black rounded-e-2xl md:rounded-e-3xl ">
+                      <img
+                        src={sunrays}
+                        alt=""
+                        className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[0%] left-[0%] -ml-[.40rem] scale-x-[-1]"
+                      />
+                      <img
+                        src={product14}
+                        alt="product1"
+                        className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                        onClick={() => openModal(images[5])}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="bg-primary bg-opacity-[.88]">
-        <Footer />
-      </div>
-      {isModalOpen && selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4"
-          style={{ zIndex: 999 }}
-        >
-          <div className="relative max-w-lg">
-            <button
-              onClick={closeModal}
-              className="absolute -bottom-10 left-[50%] translate-x-[-50%] text-red bg-white p-2 rounded-xl"
-            >
-              <MdClose />
-            </button>
-            <img
-              src={mainImage}
-              alt=""
-              className="w-full object-contain h-auto"
-            />
-            {console.log(selectedImage.id)}
-            {selectedImage.additionalImages.length > 0 && (
-              <div className="flex space-x-2">
-                {selectedImage.additionalImages.map((thumbnail, index) => (
-                  <img
-                    key={index}
-                    src={thumbnail}
-                    alt=""
-                    onClick={() => handleThumbnailClick(thumbnail)}
-                    className="w-16 h-16 cursor-pointer border mt-4 border-gray-300 object-cover rounded-xl"
-                  />
-                ))}
-              </div>
-            )}
+          <div className="bg-primary bg-opacity-[.88]">
+            <Footer />
           </div>
+          {isModalOpen && selectedImage && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4"
+              style={{ zIndex: 999 }}
+            >
+              <div className="relative max-w-lg">
+                <button
+                  onClick={closeModal}
+                  className="absolute -bottom-10 left-[50%] translate-x-[-50%] text-red bg-white p-2 rounded-xl"
+                >
+                  <MdClose />
+                </button>
+                <img
+                  src={mainImage}
+                  alt=""
+                  className="w-full object-contain h-auto"
+                />
+                {console.log(selectedImage.id)}
+                {selectedImage.additionalImages.length > 0 && (
+                  <div className="flex space-x-2">
+                    {selectedImage.additionalImages.map((thumbnail, index) => (
+                      <img
+                        key={index}
+                        src={thumbnail}
+                        alt=""
+                        onClick={() => handleThumbnailClick(thumbnail)}
+                        className="w-16 h-16 cursor-pointer border mt-4 border-gray-300 object-cover rounded-xl"
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 };
 export default GiftPage;
