@@ -9,7 +9,7 @@ const ToggledNavbar = ({ toggleNavbar, setNavbar, navbar, navRef }) => {
 
   return (
     <div
-      className="navbar text-font uppercase flex flex-col gap-1 right-[.9rem] md:right-[3.5rem] rounded-xl bg-primary border border-borderColor p-2 shadow-xl"
+      className="navbar text-font font-bold uppercase flex flex-col gap-1 right-[.9rem] md:right-[3.5rem] rounded-xl bg-primary border border-borderColor p-2 shadow-xl"
       ref={navRef}
     >
       <NavLink

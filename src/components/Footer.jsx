@@ -35,12 +35,12 @@ const Footer = () => {
           </p>
           <p className="font-semibold md:text-lg">www.roshpoetryinglass.com</p>
         </div>
-        <div className="flex items-center justify-center my-1 gap-2 pb-2">
+        {/* <div className="flex items-center justify-center my-1 gap-2 pb-2">
           <IoLogoInstagram className="bg-black text-white rounded-full size-6 p-1" />
           <TiSocialFacebook className="bg-black text-white rounded-full size-6 p-1" />
           <RiTwitterXFill className="bg-black text-white rounded-full size-6 p-1" />
           <IoLogoWhatsapp className="bg-black text-white rounded-full size-6 p-1" />
-        </div>
+        </div> */}
         <img
           src={profileDividerRed}
           alt=""
