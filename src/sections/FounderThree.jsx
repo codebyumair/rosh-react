@@ -13,7 +13,6 @@ const FounderThree = () => {
     <>
       <img
         src={logo}
-        loading="lazy"
         alt="Roshan Ali Khan"
         className="md:w-[350px] w-[260px] mx-auto"
       />

@@ -13,7 +13,6 @@ const FounderTwo = () => {
     <>
       <img
         src={logo}
-        loading="lazy"
         alt="Aabid Surti"
         className="md:w-[350px] w-[260px] mx-auto"
       />

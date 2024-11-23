@@ -13,7 +13,6 @@ const FounderOne = () => {
     <>
       <img
         src={logo}
-        loading="lazy"
         alt="Abdullah Khandwani"
         className="md:w-[350px] w-[260px] mx-auto"
       />

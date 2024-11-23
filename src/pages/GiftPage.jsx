@@ -74,14 +74,12 @@ const GiftPage = () => {
         <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
           <img
             src={green}
-            loading="lazy"
             alt=""
             className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] top-[-5px] md:top-[-6px]"
           />
           Fusion Glass Showpiece
           <img
             src={red}
-            loading="lazy"
             alt=""
             className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
           />
@@ -92,14 +90,12 @@ const GiftPage = () => {
               <div className="product relative md:rounded-s-[2rem] md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={sunrays}
-                  loading="lazy"
-                  alt="sunrays"
+                  alt=""
                   className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[30%] left-[45%] translate-x-[-50%] "
                 />
                 <img
                   src={product9}
-                  loading="lazy"
-                  alt="product"
+                  alt="product1"
                   className="w-[150px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-2xl md:rounded-s-3xl "
                   onClick={() => openModal(images[0])}
                 />
@@ -115,8 +111,7 @@ const GiftPage = () => {
                 </span>
                 <img
                   src={product10}
-                  loading="lazy"
-                  alt="product"
+                  alt="product1"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[1])}
                 />
@@ -124,8 +119,7 @@ const GiftPage = () => {
               <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px]  flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product11}
-                  loading="lazy"
-                  alt="product"
+                  alt="product1"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[2])}
                 />
@@ -142,8 +136,7 @@ const GiftPage = () => {
                 </span>
                 <img
                   src={product12}
-                  loading="lazy"
-                  alt="product"
+                  alt="product1"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[3])}
                 />
@@ -151,8 +144,7 @@ const GiftPage = () => {
               <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product13}
-                  loading="lazy"
-                  alt="product"
+                  alt="product1"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[4])}
                 />{" "}
@@ -166,8 +158,7 @@ const GiftPage = () => {
                 </span>
                 <img
                   src={product14}
-                  loading="lazy"
-                  alt="product"
+                  alt="product1"
                   className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
                   onClick={() => openModal(images[5])}
                 />
@@ -198,8 +189,7 @@ const GiftPage = () => {
             </button>
             <img
               src={mainImage}
-              loading="lazy"
-              alt="product"
+              alt=""
               className="w-full object-contain h-auto"
             />
             {console.log(selectedImage.id)}
@@ -209,8 +199,7 @@ const GiftPage = () => {
                   <img
                     key={index}
                     src={thumbnail}
-                    loading="lazy"
-                    alt="product"
+                    alt=""
                     onClick={() => handleThumbnailClick(thumbnail)}
                     className="w-16 h-16 cursor-pointer border mt-4 border-gray-300 object-cover rounded-xl"
                   />

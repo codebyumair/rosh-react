@@ -59,7 +59,6 @@ const Header = () => {
         >
           <img
             src={logo}
-            loading="lazy"
             alt="Rosh - Poetry In Glass Logo"
             className="md:w-[90px] w-[60px]"
           />

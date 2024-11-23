@@ -15,7 +15,6 @@ const AboutSection = () => {
     <>
       <img
         src={logoWithText}
-        loading="lazy"
         alt="Rosh - Poetry In Glass Logo"
         className="sticky lg:w-[230px] md:w-[190px] w-[180px] mx-auto translate-x-[-50%] left-[50%]"
       />

@@ -26,7 +26,6 @@ const HeroSection = () => {
       {!showLogoWithText ? (
         <img
           src={logoWithoutText}
-          loading="lazy"
           alt="Rosh - Poetry In Glass Logo"
           className="lg:w-[122.9px] md:w-[102px] w-[97.5px] img-without-text mx-auto"
           style={{ zIndex: 999999 }}
@@ -34,7 +33,6 @@ const HeroSection = () => {
       ) : (
         <img
           src={logoWithText}
-          loading="lazy"
           alt="Rosh - Poetry In Glass Logo"
           className="absolute lg:w-[230px] md:w-[190px] w-[180px] mx-auto translate-x-[-50%] left-[50%] img-with-text"
           style={{ zIndex: 99 }}
