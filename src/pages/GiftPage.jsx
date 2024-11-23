@@ -1,17 +1,9 @@
-import product1 from "../assets/products/INTERNATION-SCHOOL-Frame-1.png";
-import product2 from "../assets/products/Tagged-Glass-Partition-Frame-2.png";
-import product3 from "../assets/products/A-Kitchen-Wall-Frame-3.png";
-import product4 from "../assets/products/A-Glass-Partition-Frame-4.png";
-import product5 from "../assets/products/A-Thick-Glass-Mural-Frame-5.png";
-import product6 from "../assets/products/Stained-Glass-Ceiling-Frame-6.png";
-import product7 from "../assets/products/door-in-Living-Room-Frame-7.png";
-import product8 from "../assets/products/Washbasin-Mirror-frame-8.png";
-import product9 from "../assets/products/Map-of-India-in-Fused-Glass-Frame-9.png";
-import product10 from "../assets/products/Om-Table-Showpiece-Frame-10.png";
-import product11 from "../assets/products/Krishna-in-Fused-Glass-for-Wall-Frame-11.png";
-import product12 from "../assets/products/Wall-Hanging-Beautiful-Glass-Lady-Frame-12.png";
-import product13 from "../assets/products/Double-Side-Photo-Frame-Two-in-One-Frame-13.png";
-import product14 from "../assets/products/A-Unique-Glass-Ashtray-Frame-14.png";
+import product9 from "../assets/products/Map-of-India-in-Fused-Glass-Frame-9.webp";
+import product10 from "../assets/products/Om-Table-Showpiece-Frame-10.webp";
+import product11 from "../assets/products/Krishna-in-Fused-Glass-for-Wall-Frame-11.webp";
+import product12 from "../assets/products/Wall-Hanging-Beautiful-Glass-Lady-Frame-12.webp";
+import product13 from "../assets/products/Double-Side-Photo-Frame-Two-in-One-Frame-13.webp";
+import product14 from "../assets/products/A-Unique-Glass-Ashtray-Frame-14.webp";
 import green from "../assets/icons/green.svg";
 import red from "../assets/icons/red.svg";
 import sunrays from "../assets/icons/sunrays.svg";
@@ -82,12 +74,14 @@ const GiftPage = () => {
         <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
           <img
             src={green}
+            loading="lazy"
             alt=""
             className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] top-[-5px] md:top-[-6px]"
           />
           Fusion Glass Showpiece
           <img
             src={red}
+            loading="lazy"
             alt=""
             className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
           />
@@ -98,12 +92,14 @@ const GiftPage = () => {
               <div className="product relative md:rounded-s-[2rem] md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={sunrays}
-                  alt=""
+                  loading="lazy"
+                  alt="sunrays"
                   className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[30%] left-[45%] translate-x-[-50%] "
                 />
                 <img
                   src={product9}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-2xl md:rounded-s-3xl "
                   onClick={() => openModal(images[0])}
                 />
@@ -114,15 +110,13 @@ const GiftPage = () => {
                 </span>
               </div>
               <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
-                <span
-                  className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap
-              "
-                >
+                <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
                   Om Table <br className="md:hidden" /> Showpiece
                 </span>
                 <img
                   src={product10}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[1])}
                 />
@@ -130,7 +124,8 @@ const GiftPage = () => {
               <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px]  flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product11}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[2])}
                 />
@@ -147,7 +142,8 @@ const GiftPage = () => {
                 </span>
                 <img
                   src={product12}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[3])}
                 />
@@ -155,7 +151,8 @@ const GiftPage = () => {
               <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product13}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[4])}
                 />{" "}
@@ -169,9 +166,10 @@ const GiftPage = () => {
                 </span>
                 <img
                   src={product14}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
-                  onClick={() => openModal(images[13])}
+                  onClick={() => openModal(images[5])}
                 />
                 <img
                   src={sunrays}
@@ -200,7 +198,8 @@ const GiftPage = () => {
             </button>
             <img
               src={mainImage}
-              alt=""
+              loading="lazy"
+              alt="product"
               className="w-full object-contain h-auto"
             />
             {console.log(selectedImage.id)}
@@ -210,7 +209,8 @@ const GiftPage = () => {
                   <img
                     key={index}
                     src={thumbnail}
-                    alt=""
+                    loading="lazy"
+                    alt="product"
                     onClick={() => handleThumbnailClick(thumbnail)}
                     className="w-16 h-16 cursor-pointer border mt-4 border-gray-300 object-cover rounded-xl"
                   />

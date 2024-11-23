@@ -4,16 +4,21 @@ import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import logo from "../assets/profile/Rosh-Aabid-Surti-Profile-photos.png";
+import logo from "../assets/profile/Rosh-Aabid-Surti-Profile-photos.webp";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
 
 const FounderTwo = () => {
   return (
     <>
-      <img src={logo} alt="" className="md:w-[350px] w-[260px] mx-auto" />
+      <img
+        src={logo}
+        loading="lazy"
+        alt="Aabid Surti"
+        className="md:w-[350px] w-[260px] mx-auto"
+      />
       <div className="flex md:flex-row flex-col items-center justify-center h-fit">
-        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 mb-2 font-dmRegular">
+        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 mb-2 title-font">
           <BlurText text="Aabid Surti. A man of many talents." delay={50} />
         </h2>
       </div>
@@ -31,10 +36,10 @@ const FounderTwo = () => {
         >
           <img
             src={profileDividerGreen}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             National Award-winning author Aabid Surti is a versatile artist,
             celebrated for his remarkable contributions across various creative
             disciplines. His brilliance shines not only in literature but also
@@ -43,13 +48,13 @@ const FounderTwo = () => {
             held 16 prestigious exhibitions, both in India and internationally,
             captivating audiences with <br /> his distinctive artistic vision.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             Early in his career, Surti pioneered a groundbreaking technique
             known as 'mirror collage,' a form of art that caught the attention
             of global critics, earning particular praise in Japan for its
             originality and depth.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             In 1971, the Indian government honoured his contributions by
             commissioning a short film that highlighted his creative genius.
             Surti's talents extend beyond the canvas.{" "}
@@ -62,11 +67,11 @@ const FounderTwo = () => {
 
           <img
             src={profileDividerRed}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           viewport={{ once: true }}
           variants={{
@@ -81,7 +86,7 @@ const FounderTwo = () => {
           <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />
           <RiTwitterXFill className="bg-secondary text-white rounded-full size-7 p-1" />
           <IoLogoWhatsapp className="bg-secondary text-white rounded-full size-7 p-1" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

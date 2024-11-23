@@ -4,19 +4,24 @@ import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import logo from "../assets/profile/Rosh-Roshan-Khan-Profile-photos.png";
+import logo from "../assets/profile/Rosh-Roshan-Khan-Profile-photos.webp";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
 
 const FounderThree = () => {
   return (
     <>
-      <img src={logo} alt="" className="md:w-[350px] w-[260px] mx-auto" />
+      <img
+        src={logo}
+        loading="lazy"
+        alt="Roshan Ali Khan"
+        className="md:w-[350px] w-[260px] mx-auto"
+      />
       <div className="flex md:flex-row flex-col items-center justify-center h-fit">
-        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 font-dmRegular">
+        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 title-font">
           <BlurText text="Roshan Ali Khan." delay={50} />
         </h2>
-        <h2 className="w-max font-bold md:text-xl text-lg text-center -mt-2 md:mt-2 md:mb-2 mb-2 font-dmRegular">
+        <h2 className="w-max font-bold md:text-xl text-lg text-center -mt-2 md:mt-2 md:mb-2 mb-2 title-font">
           <BlurText text="An artist. A shining star." delay={50} />
         </h2>
       </div>
@@ -34,10 +39,10 @@ const FounderThree = () => {
         >
           <img
             src={profileDividerGreen}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             Roshan Ali Khan is a celebrated <br className="md:hidden" />{" "}
             stained-glass artist with over 25 years of experience in crafting
             and captivating <br className="md:hidden" />
@@ -46,13 +51,13 @@ const FounderThree = () => {
             Mumbai-based studio, a hub of creativity and craftsmanship, and a
             showcase of her immense talent.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             Khan's passion for stained glass work was ignited by two influential
             mentors she met after her studies: the renowned artist Abdullah
             Khandwani and the versatile creative genius Aabid Surti, an
             acclaimed painter, writer, and cartoonist.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             Their guidance has played a pivotal role in shaping her artistic{" "}
             <br className="md:hidden" />
             journey and illuminating the stained-glass art form scene in the
@@ -61,7 +66,7 @@ const FounderThree = () => {
 
           <img
             src={profileDividerRed}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
         </motion.div>

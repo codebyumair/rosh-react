@@ -4,19 +4,24 @@ import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import logo from "../assets/profile/Rosh-Abdullah-Khandwani-Profile-photos.png";
+import logo from "../assets/profile/Rosh-Abdullah-Khandwani-Profile-photos.webp";
 import { motion } from "framer-motion";
 import { BlurText } from "../components/BlurText";
 
 const FounderOne = () => {
   return (
     <>
-      <img src={logo} alt="" className="md:w-[350px] w-[260px] mx-auto" />
+      <img
+        src={logo}
+        loading="lazy"
+        alt="Abdullah Khandwani"
+        className="md:w-[350px] w-[260px] mx-auto"
+      />
       <div className="flex md:flex-row flex-col items-center justify-center h-fit">
-        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 font-dmRegular">
+        <h2 className="w-max font-bold md:text-xl text-lg text-center mt-2 md:mt-2 md:mb-2 title-font">
           <BlurText text="Abdullah Khandwani." delay={50} />
         </h2>
-        <h2 className="w-max font-bold md:text-xl text-lg text-center -mt-2 md:mt-2 md:mb-2 mb-2 font-dmRegular">
+        <h2 className="w-max font-bold md:text-xl text-lg text-center -mt-2 md:mt-2 md:mb-2 mb-2 title-font">
           <BlurText text="A pioneer par excellence." delay={50} />
         </h2>
       </div>
@@ -34,22 +39,22 @@ const FounderOne = () => {
         >
           <img
             src={profileDividerGreen}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem] text-center mx-auto">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem] text-center mx-auto">
             Abdullah Khandwani, a creator at heart, is an eminent and renowned
             stained-glass artist from India. <br className="hidden md:inline" />
             He has been instrumental in popularizing the art and craft across
             India and Canada over the past three decades.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             Abdullah Khandwani's innovative approach to glass art reflects a
             deep connection to heritage while pushing the boundaries of modern
             artistic expression, making him a true pioneer in the world of
             stained glass.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             With a keen eye for detail and an innate understanding of light and
             colour, his work transcends mere decoration, creating ethereal,
             illuminated spaces that captivate the soul.
@@ -57,11 +62,11 @@ const FounderOne = () => {
 
           <img
             src={profileDividerRed}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           viewport={{ once: true }}
           variants={{
@@ -76,7 +81,7 @@ const FounderOne = () => {
           <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />
           <RiTwitterXFill className="bg-secondary text-white rounded-full size-7 p-1" />
           <IoLogoWhatsapp className="bg-secondary text-white rounded-full size-7 p-1" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

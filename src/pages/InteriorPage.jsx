@@ -1,11 +1,11 @@
-import product1 from "../assets/products/INTERNATION-SCHOOL-Frame-1.png";
-import product2 from "../assets/products/Tagged-Glass-Partition-Frame-2.png";
-import product3 from "../assets/products/A-Kitchen-Wall-Frame-3.png";
-import product4 from "../assets/products/A-Glass-Partition-Frame-4.png";
-import product5 from "../assets/products/A-Thick-Glass-Mural-Frame-5.png";
-import product6 from "../assets/products/Stained-Glass-Ceiling-Frame-6.png";
-import product7 from "../assets/products/door-in-Living-Room-Frame-7.png";
-import product8 from "../assets/products/Washbasin-Mirror-frame-8.png";
+import product1 from "../assets/products/INTERNATION-SCHOOL-Frame-1.webp";
+import product2 from "../assets/products/Tagged-Glass-Partition-Frame-2.webp";
+import product3 from "../assets/products/A-Kitchen-Wall-Frame-3.webp";
+import product4 from "../assets/products/A-Glass-Partition-Frame-4.webp";
+import product5 from "../assets/products/A-Thick-Glass-Mural-Frame-5.webp";
+import product6 from "../assets/products/Stained-Glass-Ceiling-Frame-6.webp";
+import product7 from "../assets/products/door-in-Living-Room-Frame-7.webp";
+import product8 from "../assets/products/Washbasin-Mirror-frame-8.webp";
 import sunrays from "../assets/icons/sunrays.svg";
 import Footer from "../components/Footer";
 import green from "../assets/icons/green.svg";
@@ -91,12 +91,14 @@ const InteriorPage = () => {
         <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
           <img
             src={green}
+            loading="lazy"
             alt=""
             className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] top-[-5px] md:top-[-6px]"
           />
           Interiors In Stained Glass
           <img
             src={red}
+            loading="lazy"
             alt=""
             className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
           />
@@ -107,12 +109,14 @@ const InteriorPage = () => {
               <div className="product relative md:rounded-s-[2rem] md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={sunrays}
-                  alt=""
+                  loading="lazy"
+                  alt="sunrays"
                   className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[30%] left-[45%] translate-x-[-50%] "
                 />
                 <img
                   src={product1}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] border border-r-0 border-black md:p-3 p-2 rounded-s-2xl md:rounded-s-3xl "
                   onClick={() => openModal(images[0])}
                 />
@@ -138,7 +142,8 @@ const InteriorPage = () => {
                 </span>
                 <img
                   src={product2}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] p-2 md:p-3"
                   onClick={() => openModal(images[1])}
                 />
@@ -146,7 +151,8 @@ const InteriorPage = () => {
               <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product3}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[2])}
                 />
@@ -166,7 +172,8 @@ const InteriorPage = () => {
                 </span>
                 <img
                   src={product4}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[3])}
                 />
@@ -174,7 +181,8 @@ const InteriorPage = () => {
               <div className="product border border-r-0 border-black w-[50%] md:w-fit md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product5}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[4])}
                 />
@@ -190,7 +198,8 @@ const InteriorPage = () => {
                 </span>
                 <img
                   src={product6}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[5])}
                 />
@@ -198,7 +207,8 @@ const InteriorPage = () => {
               <div className="product border border-r-0 border-black w-[90%] md:w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px] flex items-center justify-start md:gap-5 gap-3">
                 <img
                   src={product7}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] md:p-3 p-2 "
                   onClick={() => openModal(images[6])}
                 />
@@ -213,13 +223,15 @@ const InteriorPage = () => {
                 </span>
                 <img
                   src={product8}
-                  alt="product1"
+                  loading="lazy"
+                  alt="product"
                   className="w-[150px] md:w-[270px] border border-l-0 border-black md:p-3 p-2 rounded-e-2xl md:rounded-e-3xl "
                   onClick={() => openModal(images[7])}
                 />
                 <img
                   src={sunrays}
-                  alt=""
+                  loading="lazy"
+                  alt="sunrays"
                   className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[70%] left-[48%] translate-x-[-50%] scale-x-[-1]"
                 />
               </div>
@@ -244,7 +256,8 @@ const InteriorPage = () => {
             </button>
             <img
               src={mainImage}
-              alt=""
+              loading="lazy"
+              alt="product"
               className={` w-full object-contain ${
                 selectedImage.id === 6 || selectedImage.id === 8
                   ? "h-[480px] w-auto"
@@ -258,7 +271,8 @@ const InteriorPage = () => {
                   <img
                     key={index}
                     src={thumbnail}
-                    alt=""
+                    loading="lazy"
+                    alt="product"
                     onClick={() => handleThumbnailClick(thumbnail)}
                     className="w-16 h-16 cursor-pointer border mt-4 border-gray-300 object-cover rounded-xl"
                   />

@@ -15,10 +15,11 @@ const AboutSection = () => {
     <>
       <img
         src={logoWithText}
-        alt=""
+        loading="lazy"
+        alt="Rosh - Poetry In Glass Logo"
         className="sticky lg:w-[230px] md:w-[190px] w-[180px] mx-auto translate-x-[-50%] left-[50%]"
       />
-      <h2 className="font-bold mx-auto md:text-xl text-lg text-center my-2 font-dmRegular">
+      <h2 className="font-bold mx-auto md:text-xl text-lg text-center my-2 title-font">
         <BlurText text="Rosh. A legacy etched in glass." delay={50} />
       </h2>
       <div className="px-3">
@@ -35,10 +36,10 @@ const AboutSection = () => {
         >
           <img
             src={profileDividerGreen}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl font-ebGroundRegular leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
             We make you look at glass in a different light. As one of the
             pioneers of fusion and stained-glass art in India, each of our
             creation is a symphony of tradition and innovation. Our bespoke
@@ -52,11 +53,11 @@ const AboutSection = () => {
           </p>
           <img
             src={profileDividerRed}
-            alt=""
+            alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           viewport={{ once: true }}
           variants={{
@@ -71,7 +72,7 @@ const AboutSection = () => {
           <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />
           <RiTwitterXFill className="bg-secondary text-white rounded-full size-7 p-1" />
           <IoLogoWhatsapp className="bg-secondary text-white rounded-full size-7 p-1" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

@@ -10,14 +10,14 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 const Footer = () => {
   return (
     <footer className="  w-full md:px-24 px-6 flex items-center justify-center py-6">
-      <div className="md:w-[1000px] font-ebGroundRegular leading-4 ">
+      <div className="md:w-[1000px] text-font leading-4 ">
         <img
           src={profileDividerGreen}
           alt=""
           className="md:w-[160px] w-[100px] mx-auto"
         />
         <div className="text-center py-2">
-          <h2 className="text-xl md:text-2xl font-bold font-dmRegular">
+          <h2 className="text-xl md:text-2xl font-bold title-font">
             Roshan Khan
           </h2>
           <p className="font-semibold md:text-lg text-nowrap">

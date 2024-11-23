@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth !important;
+  background-color: #e0d3c3;
 }
 
 details summary::-webkit-details-marker {
@@ -39,9 +43,9 @@ body::-webkit-scrollbar,
 }
 
 body {
-  /* min-height: 100vh; */
   overflow-y: scroll;
-  background: url(./assets/background/desktop-bg.png) no-repeat center top fixed;
+  background: url(./assets/background/desktop-bg.webp) no-repeat center top
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,8 +55,16 @@ body {
 .background-container {
   width: 100%;
   height: 100vh;
-  background: url(./assets/background/desktop-bg.png) no-repeat center top;
+  background: url(./assets/background/desktop-bg.webp) no-repeat center top;
   background-size: cover;
+}
+
+.title-font {
+  font-family: DMSerifRegular;
+}
+
+.text-font {
+  font-family: EBGroundRegular;
 }
 
 @font-face {
@@ -98,20 +110,44 @@ body {
 }
 
 .img-without-text {
-  animation: scaleUp 3s ease-out forwards;
+  -webkit-animation: scaleUp 3s forwards;
+  animation: scaleUp 3s forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(50);
+    transform: scale(50);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 @keyframes scaleUp {
   from {
+    -webkit-transform: scale(50);
     transform: scale(50);
   }
   to {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
 
 .img-with-text {
-  animation: slideDown 1s ease-in linear;
+  -webkit-animation: slideDown 1s linear forwards;
+  animation: slideDown 1s linear forwards;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
 }
 
 @keyframes slideDown {
@@ -120,38 +156,6 @@ body {
   }
   to {
     visibility: visible;
-  }
-}
-/* 
-.hero {
-  scroll-snap-type: y mandatory;
-}
-
-.hero-section,
-.about-section,
-.founders {
-  scroll-snap-align: center;
-} */
-
-/* .hero-section,
-.founder-section {
-  background: url(./assets/background/desktop-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-} */
-
-@media screen and (max-width: 480px) {
-  /* .hero-section {
-    background: url("./assets/background/mobile-bg.png");
-    background-repeat: no-repeat;
-    background-size: 65rem;
-    background-position: center center;
-  } */
-  .founder-section {
-    background: url("./assets/background/mobile-bg.png");
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 }
 

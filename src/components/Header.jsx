@@ -47,7 +47,7 @@ const Header = () => {
         ref={headerRef}
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 3 }}
         exit={{ opacity: 0, y: -100 }}
         className="flex items-center justify-between md:px-16 px-4 md:py-6 py-4 fixed w-full"
         style={{ zIndex: 99 }}
@@ -57,7 +57,12 @@ const Header = () => {
           className="bg-primary rounded-2xl md:p-3 p-2 border border-borderColor"
           onClick={handleLinkClick}
         >
-          <img src={logo} alt="Rosh-Logo" className="md:w-[90px] w-[60px]" />
+          <img
+            src={logo}
+            loading="lazy"
+            alt="Rosh - Poetry In Glass Logo"
+            className="md:w-[90px] w-[60px]"
+          />
         </Link>
         <button
           onClick={toggleNavbar}
