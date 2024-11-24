@@ -38,7 +38,7 @@ const FounderTwo = () => {
             alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             National Award-winning author Aabid Surti is a versatile artist,
             celebrated for his remarkable contributions across various creative
             disciplines. His brilliance shines not only in literature but also
@@ -47,13 +47,13 @@ const FounderTwo = () => {
             held 16 prestigious exhibitions, both in India and internationally,
             captivating audiences with <br /> his distinctive artistic vision.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             Early in his career, Surti pioneered a groundbreaking technique
             known as 'mirror collage,' a form of art that caught the attention
             of global critics, earning particular praise in Japan for its
             originality and depth.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             In 1971, the Indian government honoured his contributions by
             commissioning a short film that highlighted his creative genius.
             Surti's talents extend beyond the canvas.{" "}

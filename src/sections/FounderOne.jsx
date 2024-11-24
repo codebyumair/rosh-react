@@ -41,19 +41,19 @@ const FounderOne = () => {
             alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem] text-center mx-auto">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem] text-center mx-auto">
             Abdullah Khandwani, a creator at heart, is an eminent and renowned
             stained-glass artist from India. <br className="hidden md:inline" />
             He has been instrumental in popularizing the art and craft across
             India and Canada over the past three decades.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             Abdullah Khandwani's innovative approach to glass art reflects a
             deep connection to heritage while pushing the boundaries of modern
             artistic expression, making him a true pioneer in the world of
             stained glass.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             With a keen eye for detail and an innate understanding of light and
             colour, his work transcends mere decoration, creating ethereal,
             illuminated spaces that captivate the soul.

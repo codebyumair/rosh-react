@@ -41,7 +41,7 @@ const FounderThree = () => {
             alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             Roshan Ali Khan is a celebrated <br className="md:hidden" />{" "}
             stained-glass artist with over 25 years of experience in crafting
             and captivating <br className="md:hidden" />
@@ -50,13 +50,13 @@ const FounderThree = () => {
             Mumbai-based studio, a hub of creativity and craftsmanship, and a
             showcase of her immense talent.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             Khan's passion for stained glass work was ignited by two influential
             mentors she met after her studies: the renowned artist Abdullah
             Khandwani and the versatile creative genius Aabid Surti, an
             acclaimed painter, writer, and cartoonist.
           </p>
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-[18px] md:text-xl text-font leading-[1.3rem]">
             Their guidance has played a pivotal role in shaping her artistic{" "}
             <br className="md:hidden" />
             journey and illuminating the stained-glass art form scene in the
@@ -69,7 +69,7 @@ const FounderThree = () => {
             className="md:w-[140px] w-[100px] mx-auto"
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           viewport={{ once: true }}
           variants={{
@@ -84,7 +84,7 @@ const FounderThree = () => {
           <TiSocialFacebook className="bg-secondary text-white rounded-full size-7 p-1" />
           <RiTwitterXFill className="bg-secondary text-white rounded-full size-7 p-1" />
           <IoLogoWhatsapp className="bg-secondary text-white rounded-full size-7 p-1" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

@@ -24,7 +24,22 @@ const HeroSection = () => {
 
   return (
     <>
-      {!showLogoWithText ? (
+      {showLogoWithText ? (
+        <img
+          src={logoWithText}
+          alt=""
+          className=" lg:w-[230px] md:w-[190px] w-[180px] mx-auto  img-with-text"
+          style={{ zIndex: 99 }}
+        />
+      ) : (
+        <img
+          src={logoWithoutText}
+          alt=""
+          className="lg:w-[122.9px] md:w-[102px] w-[97.5px] img-without-text mx-auto"
+          style={{ zIndex: 999999 }}
+        />
+      )}
+      {/* {!showLogoWithText ? (
         <img
           src={logoWithoutText}
           alt=""
@@ -36,11 +51,11 @@ const HeroSection = () => {
           <img
             src={logoWithText}
             alt=""
-            className="absolute lg:w-[230px] md:w-[190px] w-[180px] mx-auto translate-x-[-50%] left-[50%] img-with-text"
+            className=" lg:w-[230px] md:w-[190px] w-[180px] mx-auto  img-with-text"
             style={{ zIndex: 99 }}
           />
         </>
-      )}
+      )} */}
     </>
   );
 };

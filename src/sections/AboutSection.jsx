@@ -16,12 +16,12 @@ const AboutSection = () => {
       <img
         src={logoWithText}
         alt="Rosh - Poetry In Glass Logo"
-        className="sticky lg:w-[230px] md:w-[190px] w-[180px] mx-auto translate-x-[-50%] left-[50%]"
+        className="lg:w-[230px] md:w-[190px] w-[180px] mx-auto"
       />
       <h2 className="font-bold mx-auto md:text-xl text-lg text-center my-2 title-font">
         <BlurText text="Rosh. A legacy etched in glass." delay={50} />
       </h2>
-      <div className="px-3">
+      <div className="px-3 ">
         <motion.div
           initial="hidden"
           viewport={{ once: true }}
@@ -38,7 +38,7 @@ const AboutSection = () => {
             alt="divider"
             className="md:w-[140px] w-[100px] mx-auto"
           />
-          <p className="my-2 md:my-0 text-lg md:text-xl text-font leading-[1.3rem]">
+          <p className="my-2 md:my-0 text-center text-[18px] md:text-xl text-font leading-[1.3rem]">
             We make you look at glass in a different light. As one of the
             pioneers of fusion and stained-glass art in India, each of our
             creation is a symphony of tradition and innovation. Our bespoke

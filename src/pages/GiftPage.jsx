@@ -101,90 +101,94 @@ const GiftPage = () => {
             </h2>
             <div className="container mx-auto">
               <div className="row">
-                <div className="products w-full leading-[1.1rem]">
-                  <div className="product relative md:rounded-s-[2rem] w-full md:w-[90%] rounded-s-3xl flex items-center justify-start md:gap-5 gap-3">
-                    <div className="relative border border-r-0 border-black  rounded-s-2xl md:rounded-s-3xl ">
+                <div className="products w-full leading-[1.1rem] mx-auto">
+                  <div className="relative w-full md:w-full flex items-center gap-3 md:gap-4">
+                    <div className="relative border border-black border-r-0 rounded-s-3xl md:rounded-s-[2rem] w-[150px] md:w-[270px] ">
                       <img
                         src={sunrays}
                         alt=""
-                        className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[100%] left-[100%] -ml-[.40rem]"
+                        className="absolute size-7 md:size-10 -top-[.9rem]  md:-top-[1.30rem] md:left-[100%] left-[100%] -ml-[.50rem]"
                       />
                       <img
                         src={product9}
                         alt="product1"
-                        className="w-[150px] md:w-[270px] md:p-3 p-2"
+                        className="min-w-[150px] md:w-[270px] md:p-3 p-2 "
                         onClick={() => openModal(images[0])}
                       />
                     </div>
-
-                    <span className="font-dmRegular text-sm  md:text-2xl text-left text-nowrap">
+                    <span className="title-font text-sm  md:text-2xl text-left text-nowrap">
                       Map of India <br className="md:hidden inline-flex" /> in
                       Fused Glass
                     </span>
                   </div>
-                  <div className="product border border-l-0 border-black ml-auto w-[90%] md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
-                    <span className="font-dmRegular text-sm text-right  md:text-2xl text-nowrap">
+
+                  <div className="product relative w-full md:w-full flex items-center justify-end gap-3 md:gap-4 md:-mt-[0.5px] -mt-[1px]">
+                    <span className="title-font text-sm text-right  md:text-2xl text-nowrap">
                       Om Table <br className="md:hidden" /> Showpiece
                     </span>
-                    <img
-                      src={product10}
-                      alt="product1"
-                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                      onClick={() => openModal(images[1])}
-                    />
+                    <div className="border border-black border-l-0 rounded-e-3xl md:rounded-e-[2rem] w-[150px] md:w-[270px] ">
+                      <img
+                        src={product10}
+                        alt="product1"
+                        className="min-w-[150px] md:w-[270px] md:p-3 p-2 "
+                        onClick={() => openModal(images[1])}
+                      />
+                    </div>
                   </div>
-                  <div className="product border border-r-0 border-black w-[90%] md:rounded-s-[2rem] rounded-s-3xl -mt-[1px] md:-mt-[.9px]  flex items-center justify-start md:gap-5 gap-3">
-                    <img
-                      src={product11}
-                      alt="product1"
-                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                      onClick={() => openModal(images[2])}
-                    />
-                    <span
-                      className="font-dmRegular text-sm  md:text-2xl text-nowrap
-              "
-                    >
+                  <div className="product relative w-full md:w-full flex items-center gap-3 md:gap-4 md:-mt-[1px] -mt-[1px]">
+                    <div className="border border-black border-r-0 rounded-s-3xl md:rounded-s-[2rem] w-[150px] md:w-[270px] ">
+                      <img
+                        src={product11}
+                        alt="product1"
+                        className="min-w-[150px] md:w-[270px] md:p-3 p-2 "
+                        onClick={() => openModal(images[2])}
+                      />
+                    </div>
+                    <span className="title-font text-sm  md:text-2xl text-nowrap">
                       Krishna in Fused Glass <br className="md:hidden" /> for
                       Wall
                     </span>
                   </div>
-                  <div className="product border border-l-0 border-black ml-auto w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] flex items-center justify-end md:gap-5 gap-3">
-                    <span className="font-dmRegular text-sm  md:text-2xl text-right text-nowrap">
+                  <div className="product relative w-full md:w-full flex items-center justify-end gap-3 md:gap-4 md:-mt-[0.5px] -mt-[1px]">
+                    <span className="title-font text-sm  md:text-2xl text-right text-nowrap">
                       Wall Hanging <br /> Beautiful Glass Lady
                     </span>
-                    <img
-                      src={product12}
-                      alt="product1"
-                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                      onClick={() => openModal(images[3])}
-                    />
+                    <div className="border border-black border-l-0 rounded-e-3xl md:rounded-e-[2rem] w-[150px] md:w-[270px] ">
+                      <img
+                        src={product12}
+                        alt="product1"
+                        className="min-w-[150px] md:w-[270px] md:p-3 p-2 "
+                        onClick={() => openModal(images[3])}
+                      />
+                    </div>
                   </div>
-                  <div className="product relative  w-[90%] border border-r-0 border-black rounded-s-3xl  -mt-[1px] md:-mt-[.5px] flex items-center justify-start md:gap-5 gap-3">
-                    <img
-                      src={product13}
-                      alt="product1"
-                      className="w-[150px] md:w-[270px] md:p-3 p-2 "
-                      onClick={() => openModal(images[4])}
-                    />{" "}
-                    <span className="font-dmRegular text-sm  md:text-2xl text-nowrap">
+                  <div className="product relative w-full md:w-full flex items-center gap-3 md:gap-4 md:-mt-[.5px] -mt-[1px]">
+                    <div className="border border-black border-r-0 rounded-s-3xl md:rounded-s-[2rem] w-[150px] md:w-[270px] ">
+                      <img
+                        src={product13}
+                        alt="product1"
+                        className="min-w-[150px] md:w-[270px] md:p-3 p-2 "
+                        onClick={() => openModal(images[4])}
+                      />
+                    </div>
+                    <span className="title-font text-sm  md:text-2xl text-nowrap">
                       Double Side Photo <br /> Frame Two in One
                     </span>
                   </div>
-                  <div className="product relative ml-auto w-full md:w-[90%] md:rounded-e-[2rem] rounded-e-3xl -mt-[1px] md:-mt-[.8px] flex items-center justify-end md:gap-5 gap-3">
+                  <div className="product relative w-full md:w-full flex items-center justify-end gap-3 md:gap-4 md:-mt-[.5px] -mt-[1px]">
                     <span className="title-font text-sm  md:text-2xl text-nowrap text-right">
                       A Unique Glass Ashtray
                     </span>
-
-                    <div className="relative border border-l-0 border-black rounded-e-2xl md:rounded-e-3xl ">
+                    <div className="relative border border-black border-l-0 rounded-e-3xl md:rounded-e-[2rem] w-[150px] md:w-[270px] ">
                       <img
                         src={sunrays}
                         alt=""
-                        className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[0%] left-[0%] -ml-[.40rem] scale-x-[-1]"
+                        className="absolute size-7 md:size-10 -bottom-[.9rem]  md:-bottom-[1.30rem] md:left-[0%] left-[0%] scale-x-[-1] md:-ml-[2rem] -ml-[1.3rem]"
                       />
                       <img
                         src={product14}
                         alt="product1"
-                        className="w-[150px] md:w-[270px] md:p-3 p-2 "
+                        className="min-w-[150px] md:w-[270px] md:p-3 p-2 "
                         onClick={() => openModal(images[5])}
                       />
                     </div>

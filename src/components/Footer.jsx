@@ -20,20 +20,22 @@ const Footer = () => {
           <h2 className="text-xl md:text-2xl font-bold title-font">
             Roshan Khan
           </h2>
-          <p className="font-semibold md:text-lg text-nowrap">
+          <p className="font-semibold text-sm md:text-lg text-nowrap">
             Fusion & Stained Glass Artist (Customised Designs)
           </p>
-          <p className="font-semibold md:text-lg">
+          <p className="font-semibold text-sm md:text-lg mt-1 md:mt-0">
             +91 9769556070, +91 7977043269, roshpoetryinglass@gmail.com
           </p>
-          <p className="font-semibold md:text-lg hidden">
+          <p className="font-semibold text-sm md:text-lg hidden">
             roshpoetryinglass@gmail.com
           </p>
-          <p className="font-semibold md:text-lg mt-3 md:mt-1">
+          <p className="font-semibold text-sm md:text-lg mt-3 md:mt-1">
             Studio: 191/1530, Motilal Nagar No.1 <br className="md:hidden" />{" "}
             Goregaon (West), Mumbai: 400062
           </p>
-          <p className="font-semibold md:text-lg">www.roshpoetryinglass.com</p>
+          <p className="font-semibold text-sm md:text-lg">
+            www.roshpoetryinglass.com
+          </p>
         </div>
         {/* <div className="flex items-center justify-center my-1 gap-2 pb-2">
           <IoLogoInstagram className="bg-black text-white rounded-full size-6 p-1" />

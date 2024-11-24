@@ -23,7 +23,7 @@ const ContactPage = () => {
         <Preloader title="Contact" />
       ) : (
         <div className="background-container h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-          <div className="bg-primary bg-opacity-[.88] h-screen flex items-center justify-center">
+          <div className="bg-primary md:pt-24 pt-24 bg-opacity-[.88] h-screen flex items-center justify-center">
             <div className="container mx-auto px-4 md:px-8 flex flex-col gap-4">
               <h2 className="font-dmRegular md:text-4xl text-2xl text-center border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
                 <img
