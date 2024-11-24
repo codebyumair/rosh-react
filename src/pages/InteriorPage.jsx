@@ -103,7 +103,7 @@ const InteriorPage = () => {
         <Preloader title="Interiors In Stained Glass" />
       ) : (
         <div className="background-container overflow-y-scroll h-screen">
-          <div className="pt-36 pb-16 bg-primary bg-opacity-[.88] product-container">
+          <div className="pt-36 pb-16 px-4 md:px-8  bg-primary bg-opacity-[.88] product-container">
             <h2 className="font-dmRegular md:text-4xl text-center mb-16 border border-l-0 border-r-0 w-fit mx-auto border-black md:py-2 py-2 relative">
               <img
                 src={green}
@@ -117,7 +117,7 @@ const InteriorPage = () => {
                 className="md:w-[12px] w-[10px] mx-auto absolute left-[50%] bottom-[-5px] md:bottom-[-6px]"
               />
             </h2>
-            <div className="container mx-auto px-4 md:px-8 ">
+            <div className="container mx-auto ">
               <div className="row">
                 <div className="products w-full leading-[1.1rem] mx-auto">
                   <div className="relative w-full md:w-full flex items-center gap-3 md:gap-4">

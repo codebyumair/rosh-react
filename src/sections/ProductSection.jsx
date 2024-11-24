@@ -112,7 +112,7 @@ const ProductSection = () => {
   };
   return (
     <>
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="row">
           <div className="products w-full leading-[1.1rem] mx-auto">
             <div className="relative w-full md:w-full flex items-center gap-3 md:gap-4">
